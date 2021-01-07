@@ -17,6 +17,8 @@ You have to join the workspace to use the sample application exercises.
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d01-welcome/u1-d01-welcome.pdf)
 :::
 
+:::
+
 ::: {.application-exercise}
 **First dataviz**
 
@@ -66,4 +68,6 @@ You have to join the workspace to use the sample application exercises.
 
 ::: {.source}
 [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git.Rmd)
+:::
+
 :::
