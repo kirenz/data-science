@@ -11,12 +11,12 @@ You have to join the workspace to use the sample application exercises.
 
 ## Slides and application exercises
 
-::: {.slide-deck} **Unit 1 - Deck 1: Welcome**
+::: {.slide-deck}
+**Unit 1 - Deck 1: Welcome**
 
 ::: {.slides}
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d01-welcome/u1-d01-welcome.pdf)
 :::
-
 :::
 
 ::: {.application-exercise}
@@ -33,7 +33,8 @@ You have to join the workspace to use the sample application exercises.
 > ::: {.source}
 > [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
 > :::
-:::
+>
+> :::
 
 ::: {.slide-deck}
 **Unit 1 - Deck 2: Meet the toolkit - Programming**
@@ -69,5 +70,4 @@ You have to join the workspace to use the sample application exercises.
 ::: {.source}
 [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git.Rmd)
 :::
-
 :::
