@@ -1,5 +1,5 @@
 ---
-title: "Programming Languages for Data Science"
+title: "Data Science Basics"
 subtitle: "<br><br> Introduction (UN Votings)"
 author: "Prof. Dr. Jan Kirenz"
 output:
@@ -30,8 +30,6 @@ class: inverse
 ]
 
 .pull-left-wide[
-
-- This is a course on data science with `R` and `SQL`
 
 - Data science is an exciting discipline that allows you to turn raw data into understanding, insight, and knowledge. 
 
@@ -344,8 +342,16 @@ knitr::include_graphics("img/unvotes/unvotes-15.png")
 
 
 ---
+
+---
 class: inverse, middle
 
+.your-turn[
 
-- RStudio-Cloud
+.red[.hand[Your turn: ]] `AE 01 - UN Votes`
+
+- Go to [RStudio Cloud](https://rstudio.cloud/) and start the assignment `AE 01 - UN Votes`. 
+
+- Open and knit the R Markdown document `unvotes.Rmd`.
+]
 
