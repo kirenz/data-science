@@ -1,13 +1,10 @@
 # Making rigorous conclusions {#making-rigorous-conclusions}
 
 In this part we introduce modelling and statistical inference for making data-based conclusions.
-We discuss building, interpreting, and selecting models, visualizing interaction effects, and prediction and model validation.
-Statistical inference is introduced from a simulation based perspective, and the Central Limit Theorem is discussed very briefly to lay the foundation for future coursework in statistics.
 
-::: {.rstudio-cloud}
-The RStudio Cloud workspace for Data Science Course in a Box project is [here](https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK).
-You can join the workspace and play around with the sample application exercises.
-:::
+We discuss building, interpreting, and selecting models, visualizing interaction effects, and prediction and model validation.
+
+Statistical inference is introduced from a simulation based perspective, and the Central Limit Theorem is discussed very briefly to lay the foundation for future coursework in statistics.
 
 ## Slides, videos, and application exercises
 
@@ -17,15 +14,11 @@ You can join the workspace and play around with the sample application exercises
 **Unit 4 - Deck 1: The language of models**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d01-language-of-models/u4-d01-language-of-models.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d01-language-of-models/u4-d01-language-of-models.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d01-language-of-models)
-:::
-
-::: {.video}
-[Video](https://youtu.be/MWkkvDopBKc)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d01-language-of-models)
 :::
 :::
 
@@ -33,15 +26,11 @@ You can join the workspace and play around with the sample application exercises
 **Unit 4 - Deck 2: Fitting and interpreting models**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d02-fitting-interpreting-models/u4-d02-fitting-interpreting-models.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d02-fitting-interpreting-models/u4-d02-fitting-interpreting-models.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d02-fitting-interpreting-models)
-:::
-
-::: {.video}
-[Video](https://youtu.be/69U92Q3pwnA)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d02-fitting-interpreting-models)
 :::
 
 ::: {.reading}
@@ -53,15 +42,11 @@ IMS :: [Chp 3 - Introduction to linear models](https://openintro-ims.netlify.app
 **Unit 4 - Deck 3: Modelling nonlinear relationships**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d03-modeling-nonlinear-relationships/u4-d03-modeling-nonlinear-relationships.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d03-modeling-nonlinear-relationships/u4-d03-modeling-nonlinear-relationships.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d03-modeling-nonlinear-relationships)
-:::
-
-::: {.video}
-[Video](https://youtu.be/j4MZ6ZdHnHg)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d03-modeling-nonlinear-relationships)
 :::
 :::
 
@@ -69,15 +54,11 @@ IMS :: [Chp 3 - Introduction to linear models](https://openintro-ims.netlify.app
 **Unit 4 - Deck 4: Models with multiple predictors**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d04-model-multiple-predictors/u4-d04-model-multiple-predictors.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d04-model-multiple-predictors/u4-d04-model-multiple-predictors.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d04-model-multiple-predictors)
-:::
-
-::: {.video}
-[Video](https://youtu.be/mjkNabD4oi4)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d04-model-multiple-predictors)
 :::
 
 ::: {.reading}
@@ -89,15 +70,11 @@ IMS :: [Sec 4.1 - Regression with multiple predictors](https://openintro-ims.net
 **Unit 4 - Deck 5: More models with multiple predictors**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d05-more-model-multiple-predictors/u4-d05-more-model-multiple-predictors.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d05-more-model-multiple-predictors/u4-d05-more-model-multiple-predictors.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d05-more-model-multiple-predictors)
-:::
-
-::: {.video}
-[Video](https://youtu.be/nJAYRnLPb10)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d05-more-model-multiple-predictors)
 :::
 :::
 
@@ -107,15 +84,11 @@ IMS :: [Sec 4.1 - Regression with multiple predictors](https://openintro-ims.net
 **Unit 4 - Deck 6: Logistic regression**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d06-logistic-reg/u4-d06-logistic-reg.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d06-logistic-reg/u4-d06-logistic-reg.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d06-logistic-reg)
-:::
-
-::: {.video}
-[Video](https://youtu.be/AidXFYSYfJg)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d06-logistic-reg)
 :::
 
 ::: {.reading}
@@ -127,15 +100,11 @@ IMS :: [Sec 4.5 - Logistic regression](https://openintro-ims.netlify.app/multi-l
 **Unit 4 - Deck 7: Prediction and overfitting**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d07-prediction-overfitting/u4-d07-prediction-overfitting.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d07-prediction-overfitting/u4-d07-prediction-overfitting.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d07-prediction-overfitting)
-:::
-
-::: {.video}
-[Video](https://youtu.be/Qd4lu_Lmwi0)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d07-prediction-overfitting)
 :::
 
 ::: {.reading}
@@ -147,15 +116,11 @@ tidymodels :: [Build a model](https://www.tidymodels.org/start/models/)
 **Unit 4 - Deck 8: Feature engineering**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d08-feature-engineering/u4-d08-feature-engineering.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d08-feature-engineering/u4-d08-feature-engineering.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d08-feature-engineering)
-:::
-
-::: {.video}
-[Video](https://youtu.be/wZt9ab4jBZ4)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d08-feature-engineering)
 :::
 
 ::: {.reading}
@@ -169,15 +134,11 @@ tidymodels :: [Preprocess your data with recipes](https://www.tidymodels.org/sta
 **Unit 4 - Deck 9: Cross validation**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d09-cross-validation/u4-d09-cross-validation.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d09-cross-validation/u4-d09-cross-validation.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d09-cross-validation)
-:::
-
-::: {.video}
-[Video](https://youtu.be/L1KfIISmUT4)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d09-cross-validation)
 :::
 
 ::: {.reading}
@@ -191,10 +152,6 @@ tidymodels :: [Evaluate your model with resampling](https://www.tidymodels.org/s
 ::: {.source}
 [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-09-feat-eng-cv/theoffice.Rmd)
 :::
-
-::: {.video}
-[Video](https://youtu.be/qsUYstdN4LQ)
-:::
 :::
 
 ::: {.application-exercise}
@@ -202,10 +159,6 @@ tidymodels :: [Evaluate your model with resampling](https://www.tidymodels.org/s
 
 ::: {.source}
 [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-09-feat-eng-cv/theoffice.Rmd)
-:::
-
-::: {.video}
-[Video](https://youtu.be/WstIr94Fdjc)
 :::
 :::
 
@@ -215,15 +168,11 @@ tidymodels :: [Evaluate your model with resampling](https://www.tidymodels.org/s
 **Unit 4 - Deck 10: Quantifying uncertainty**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d10-quantify-uncertainty/u4-d10-quantify-uncertainty.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d10-quantify-uncertainty/u4-d10-quantify-uncertainty.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d10-quantify-uncertainty)
-:::
-
-::: {.video}
-[Video](https://youtu.be/LYpKrtZmQtI)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d10-quantify-uncertainty)
 :::
 :::
 
@@ -231,15 +180,11 @@ tidymodels :: [Evaluate your model with resampling](https://www.tidymodels.org/s
 **Unit 4 - Deck 11: Bootstrapping**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d11-bootstrap/u4-d11-bootstrap.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d11-bootstrap/u4-d11-bootstrap.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d11-bootstrap)
-:::
-
-::: {.video}
-[Video](https://youtu.be/bdqpI3iVOso)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d11-bootstrap)
 :::
 
 ::: {.reading}
@@ -251,11 +196,11 @@ IMS :: [Sec 5.2 - Bootstrap confidence intervals](https://openintro-ims.netlify.
 **Unit 4 - Deck 12: Hypothesis testing**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d12-hypothesis-testing/u4-d12-hypothesis-testing.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d12-hypothesis-testing/u4-d12-hypothesis-testing.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d12-hypothesis-testing)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d12-hypothesis-testing)
 :::
 
 ::: {.reading}
@@ -267,11 +212,11 @@ IMS :: [Sec 5.2 - Bootstrap confidence intervals](https://openintro-ims.netlify.
 **Unit 4 - Deck 13: Inference overview**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u4-d13-inference-overview/u4-d13-inference-overview.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u4-d13-inference-overview/u4-d13-inference-overview.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u4-d13-inference-overview)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u4-d13-inference-overview)
 :::
 :::
 
@@ -287,7 +232,7 @@ Fitting and interpreting simple linear regression models
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/lab-instructions/lab-10)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/lab-instructions/lab-10)
 :::
 
 ::: {.starter}
