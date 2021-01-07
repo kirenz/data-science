@@ -7,11 +7,6 @@ We end the unit with web scraping and introduce the idea of iteration in prepara
 
 Also in this unit we introduce the toolkit: R, RStudio, R Markdown, Git, and GitHub.
 
-::: {.rstudio-cloud}
-The RStudio Cloud workspace for Data Science Course in a Box project is [here](https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK).
-You can join the workspace and play around with the application exercises.
-:::
-
 ## Slides, videos, and application exercises
 
 ### Visualising data

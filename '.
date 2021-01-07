@@ -25,60 +25,8 @@ output file: 02-making-rigorous-conclusions.knit.md
 
 
 
-processing file: 02-looking-further.Rmd
-output file: 02-looking-further.knit.md
-
-
-
 processing file: 02-interactive-tutorials.Rmd
 output file: 02-interactive-tutorials.knit.md
 
 
-
-processing file: 02-project.Rmd
-output file: 02-project.knit.md
-
-
-
-processing file: 02-exams.Rmd
-output file: 02-exams.knit.md
-
-
-
-processing file: 03-access-r.Rmd
-output file: 03-access-r.knit.md
-
-
-
-processing file: 03-version-control.Rmd
-output file: 03-version-control.knit.md
-
-
-
-processing file: 03-discussion.Rmd
-output file: 03-discussion.knit.md
-
-
-
-processing file: 03-sharing.Rmd
-output file: 03-sharing.knit.md
-
-
-
-processing file: 03-alternative-setups.Rmd
-output file: 03-alternative-setups.knit.md
-
-
-
-processing file: 04-pedagogy.Rmd
-output file: 04-pedagogy.knit.md
-
-
-
-processing file: 04-schedule.Rmd
-output file: 04-schedule.knit.md
-
-
 Output created: docs/index.html
-Warnmeldung:
-The label(s) design-principles not found 

@@ -22,134 +22,4 @@
   ordinary text without R code
 
 
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |.....                                                                 |   7%
-  ordinary text without R code
-
-  |                                                                              |.........                                                             |  13%
-label: rscloud-bigpicture (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "RStudio Cloud classroom structure"
-
-  |                                                                              |..............                                                        |  20%
-  ordinary text without R code
-
-  |                                                                              |...................                                                   |  27%
-label: rscloud-new-workspace (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Creating a new workspace on RStudio Cloud"
-
-  |                                                                              |.......................                                               |  33%
-  ordinary text without R code
-
-  |                                                                              |............................                                          |  40%
-label: rscloud-workspace-permissions (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Setting workspace permissions"
-
-  |                                                                              |.................................                                     |  47%
-  ordinary text without R code
-
-  |                                                                              |.....................................                                 |  53%
-label: rscloud-new-project (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "A new project in RStudio Cloud is a new project in the RStudio IDE"
-
-  |                                                                              |..........................................                            |  60%
-  ordinary text without R code
-
-  |                                                                              |...............................................                       |  67%
-label: rscloud-project-permissions (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Setting project permissions within a workspace"
-
-  |                                                                              |...................................................                   |  73%
-  ordinary text without R code
-
-  |                                                                              |........................................................              |  80%
-label: rscloud-base-template (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Selecting a base project template"
-
-  |                                                                              |.............................................................         |  87%
-  ordinary text without R code
-
-  |                                                                              |.................................................................     |  93%
-label: rscloud-git-project (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Creating a new project from GitHub repository"
-
-  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |..............                                                        |  20%
-  ordinary text without R code
-
-  |                                                                              |............................                                          |  40%
-label: alt-centralized-server (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Centralized RStudio server"
-
-  |                                                                              |..........................................                            |  60%
-  ordinary text without R code
-
-  |                                                                              |........................................................              |  80%
-label: alt-docker (with options) 
-List of 3
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.cap  : chr "Dockerized RStudio server"
-
-  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-/Applications/RStudio.app/Contents/MacOS/pandoc/pandoc +RTS -K512m -RTS data-science.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output data-science.html --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --metadata-file /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//Rtmp76kG1s/file166e292e6053 --wrap preserve --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/templates/bs4_book.html --highlight-style pygments --number-sections --css css/dsbox.css --css css/fontawesome/css/all.css --include-in-header /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//Rtmp76kG1s/rmarkdown-str166e23b5fe44.html --mathjax 
+/Applications/RStudio.app/Contents/MacOS/pandoc/pandoc +RTS -K512m -RTS data-science.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output data-science.html --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --metadata-file /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//Rtmp3v9mSr/file197a2960f785 --wrap preserve --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/templates/bs4_book.html --highlight-style pygments --number-sections --css css/dsbox.css --css css/fontawesome/css/all.css --include-in-header /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//Rtmp3v9mSr/rmarkdown-str197a1d1a51fc.html --mathjax 

@@ -1,18 +1,9 @@
 # Interactive tutorials {#interactive-tutorials}
 
 The following interactive tutorials have been built with [**learnr**](https://rstudio.github.io/learnr/publishing.html) and [**gradethis**](https://rstudio-education.github.io/gradethis/).
+
 They're available on shinyapps.io (linked) as well as distributed with the [**dsbox**](https://rstudio-education.github.io/dsbox/tutorials/index.html) package.[^interactive-tutorials-1]
 With the dsbox package installed, you can also run these tutorials in the Tutorials pane of your RStudio window.
-This might be preferable for courses with high enrollment where students need to access the tutorials at the same time.
-
-[^interactive-tutorials-1]: The dsbox package is not yet on CRAN, until then you will need to install from GitHub with `devtools::install_github("rstudio-education/dsbox")`.
-
-Note that many of these include examples and questions from the homework assignments listed earlier.
-You can think of these as interactive, auto-feedback versions of the simpler questions in the homework assignments.
-If using both the tutorials and the homework assignments in your teaching, I recommend modifying the homework assignments to remove the redundant questions (they will usually be the earlier, shorter, simpler questions) and making the homework assignment shorter.
-Students will ultimately get exposed to the same material, but get auto-feedback in the tutorials and human feedback on the homework assignments.
-
-If you would like to learn about making your own tutorials with learnr, I strongly recommend reviewing the video and materials from the following 1.5 hour workshop: [Building interactive tutorials in R](https://mine-cetinkaya-rundel.github.io/teach-r-online/).
 
 ::: {.tutorial}
 **Tutorial 1: Airbnb listings in Edinburgh**
@@ -90,3 +81,5 @@ The goal of this tutorial is not to conduct a thorough analysis of Airbnb listin
 
 [[Tutorial]](https://minecr.shinyapps.io/dsbox-08-bootstrapgss/) [[Source]](https://github.com/rstudio-education/dsbox/tree/master/inst/tutorials/08-bootstrapgss)
 :::
+
+[^interactive-tutorials-1]: The dsbox package is not yet on CRAN, until then you will need to install from GitHub with `devtools::install_github("rstudio-education/dsbox")`.
