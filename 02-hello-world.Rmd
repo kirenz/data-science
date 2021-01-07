@@ -11,20 +11,10 @@ You have to join the workspace to use the sample application exercises.
 
 ## Slides and application exercises
 
-::: {.slide-deck}
-**Unit 1 - Deck 1: Welcome**
+::: {.slide-deck} **Unit 1 - Deck 1: Welcome**
 
 ::: {.slides}
-[Slides](https://kirenz.github.io/data-science/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1)
-:::
-
-::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d01-welcome)
-:::
-
-::: {.video}
-[Video](https://youtu.be/OJ1xR0ObhIw)
-:::
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d01-welcome/u1-d01-welcome.pdf)
 :::
 
 ::: {.application-exercise}
@@ -33,17 +23,13 @@ You have to join the workspace to use the sample application exercises.
 > **Option 1 - UN Votes**
 >
 > ::: {.source}
-> [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd)
+> [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd)
 > :::
 >
-> ::: {.video}
-> [Video](https://youtu.be/r-uTBEclM1E)
-> :::
-
 > **Option 2 - COVID-19**
 >
 > ::: {.source}
-> [Source](https://github.com/rstudio-education/datascience-box/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
+> [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
 > :::
 :::
 
@@ -51,15 +37,11 @@ You have to join the workspace to use the sample application exercises.
 **Unit 1 - Deck 2: Meet the toolkit - Programming**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d02-toolkit-r/u1-d02-toolkit-r.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d02-toolkit-r/u1-d02-toolkit-r.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d02-toolkit-r)
-:::
-
-::: {.video}
-[Video](https://youtu.be/mTAZLFcpnLI)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d02-toolkit-r.Rmd)
 :::
 
 ::: {.reading}
@@ -72,22 +54,16 @@ You have to join the workspace to use the sample application exercises.
 **Bechdel + R Markdown**
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel.Rmd)
+[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel.Rmd)
 :::
 :::
 
-::: {.slide-deck}
-**Unit 1 - Deck 3: Meet the toolkit - Version control and collaboration**
+::: {.slide-deck} **Unit 1 - Deck 3: Meet the toolkit - Version control and collaboration**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git)
-:::
-
-::: {.video}
-[Video](https://youtu.be/124DQasLyNQ)
-:::
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git.Rmd)
 :::

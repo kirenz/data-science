@@ -27,7 +27,7 @@ library(palmerpenguins)
 
 class: middle
 
-.small[*The following content is based on Mine Çetinkaya-Rundel's excellent book Data Science in a Box*
+.small[*The following content is based on Mine Çetinkaya-Rundel's excellent materials from "Data Science in a Box"*
 ]
 
 # ggplot2 `r emo::ji("penguin")`
