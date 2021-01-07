@@ -2,32 +2,20 @@
 
 # Hello world {#hello-world}
 
-I recommend starting the class off right, devoting more of the class time to introducing the course content instead of the course policies.
-And get students doing something with data as quickly as possible!
-A personal goal of mine is to get students to produce their first data visualization within the first 10 minutes of class.
-The application exercise in this lecture is one way of achieving this goal.
-Slides for Day One of class are provided below.
-
-Note that getting students computing on Day One in class requires that they come to class equipped with a laptop or that you're holding your course online or in a computer lab.
-If teaching online, this is resolved automatically, of course.
-They do not need to do any preparation ahead of time, just need internet access.
-As outlined in the slides, give them a link to your RStudio Cloud workspace and get them started working on the application exercise you put together for them.
-There are two options for a day one application exercise.
-Note that one of them uses COVID-19 data and depending on where, when, and to whom you're teaching, working with these data might not be the most pleasant experience for all students.
-Please make sure to consider this before using this activity.
+In this first application, we conduct our first data visualization.
 
 ::: {.rstudio-cloud}
-The RStudio Cloud workspace for Data Science Course in a Box project is [here](https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK).
-You can join the workspace and play around with the sample application exercises.
+The RStudio Cloud workspace for your course is provided in your [Moodle-Course](https://e-learning.hdm-stuttgart.de/moodle/login/index.php).
+You have to join the workspace to use the sample application exercises.
 :::
 
-## Slides, videos, and application exercises
+## Slides and application exercises
 
 ::: {.slide-deck}
 **Unit 1 - Deck 1: Welcome**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1)
+[Slides](https://kirenz.github.io/data-science/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1)
 :::
 
 ::: {.source}

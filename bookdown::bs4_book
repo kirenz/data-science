@@ -6,55 +6,6 @@
   ordinary text without R code
 
 
-  |                                                                              |                                                                      |   0%  |                                                                              |..............                                                        |  20%
-  ordinary text without R code
-
-  |                                                                              |............................                                          |  40%
-label: cake-ingredients (with options) 
-List of 2
- $ fig.align: chr "center"
- $ echo     : logi FALSE
-
-  |                                                                              |..........................................                            |  60%
-  ordinary text without R code
-
-  |                                                                              |........................................................              |  80%
-label: owl (with options) 
-List of 2
- $ fig.align: chr "center"
- $ echo     : logi FALSE
-
-  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |.......................                                               |  33%
-  ordinary text without R code
-
-  |                                                                              |...............................................                       |  67%
-label: topic-flow (with options) 
-List of 4
- $ fig.align: chr "center"
- $ echo     : logi FALSE
- $ fig.asp  : num 0.3
- $ out.width: chr "100%"
-
-  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
-  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
-  ordinary text without R code
-
-
   |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
   ordinary text without R code
 
@@ -201,4 +152,4 @@ List of 3
   ordinary text without R code
 
 
-/Applications/RStudio.app/Contents/MacOS/pandoc/pandoc +RTS -K512m -RTS data-science.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output data-science.html --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --metadata-file /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//RtmpC8xN4O/file1caf2ec6dab2 --wrap preserve --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/templates/bs4_book.html --highlight-style pygments --number-sections --css css/dsbox.css --css css/fontawesome/css/all.css --include-in-header /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//RtmpC8xN4O/rmarkdown-str1caf13ff41c.html --mathjax 
+/Applications/RStudio.app/Contents/MacOS/pandoc/pandoc +RTS -K512m -RTS data-science.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output data-science.html --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.0/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --metadata-file /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//RtmpjMYZQc/file21ad48eda37c --wrap preserve --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/4.0/Resources/library/bookdown/templates/bs4_book.html --highlight-style pygments --number-sections --css css/dsbox.css --css css/fontawesome/css/all.css --include-in-header /var/folders/9c/_3s5jt3n60j__flsgl0t72340000gn/T//RtmpjMYZQc/rmarkdown-str21ad6988474b.html --mathjax 

@@ -10,26 +10,6 @@ output file: 01-overview.knit.md
 
 
 
-processing file: 01-design-principles.Rmd
-output file: 01-design-principles.knit.md
-
-
-
-processing file: 01-topics.Rmd
-output file: 01-topics.knit.md
-
-
-
-processing file: 01-tech-stack.Rmd
-output file: 01-tech-stack.knit.md
-
-
-
-processing file: 01-community.Rmd
-output file: 01-community.knit.md
-
-
-
 processing file: 02-hello-world.Rmd
 output file: 02-hello-world.knit.md
 
@@ -37,11 +17,6 @@ output file: 02-hello-world.knit.md
 
 processing file: 02-exploring-data.Rmd
 output file: 02-exploring-data.knit.md
-
-
-
-processing file: 02-ethics.Rmd
-output file: 02-ethics.knit.md
 
 
 
@@ -105,3 +80,5 @@ output file: 04-schedule.knit.md
 
 
 Output created: docs/index.html
+Warnmeldung:
+The label(s) design-principles not found 
