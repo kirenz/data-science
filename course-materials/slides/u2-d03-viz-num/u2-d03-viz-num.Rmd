@@ -30,7 +30,7 @@ loans_full_schema <- loans_full_schema %>%
 
 class: middle
 
-.small[*The following content is based on Mine Çetinkaya-Rundel's excellent book Data Science in a Box*
+.small[*The following content is based on Mine Çetinkaya-Rundel's excellent materials from "Data Science in a Box"*
 ]
 
 # Terminology
@@ -49,6 +49,8 @@ class: middle
 
 ## Types of variables
 
+<br>
+
 ### Numerical variables
 
 - **Numerical variables** can be classified as **continuous** or **discrete** 
@@ -58,6 +60,16 @@ class: middle
 ### Categorical variables
 
 - If the variable is **categorical**, we can determine if it is **nominal** or **ordinal**, based on whether or not the levels have a natural ordering.
+
+
+---
+
+class: center, middle
+
+<iframe width="960" height="515" src="https://www.data-to-viz.com" frameborder="0"</iframe>
+
+- Source:  [From Data to Viz](https://www.data-to-viz.com)
+
 
 
 ---

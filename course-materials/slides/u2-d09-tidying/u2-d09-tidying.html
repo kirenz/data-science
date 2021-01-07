@@ -93,8 +93,11 @@ class: middle
 The goal of tidyr is to help you tidy your data via
 
 - pivoting for going between wide and long data
+
 - splitting and combining character columns
+
 - nesting and unnesting columns
+
 - clarifying how `NA`s should be treated
 ]
 
@@ -106,13 +109,7 @@ class: middle
 
 ---
 
-## Not this...
-
-&lt;img src="img/pivot.gif" width="70%" style="display: block; margin: auto;" /&gt;
-
----
-
-## but this!
+## Pivoting data
 
 .center[
 &lt;img src="img/tidyr-longer-wider.gif" width="45%" style="background-color: #FDF6E3" style="display: block; margin: auto;" /&gt;
@@ -383,7 +380,7 @@ trump
 ## Goal
 
 .pull-left-wide[
-&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 --
 .pull-right-narrow[
@@ -439,7 +436,7 @@ ggplot(trump_longer,
   facet_wrap(~ subgroup)
 ```
 
-&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-22-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-21-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -465,7 +462,7 @@ ggplot(trump_longer,
 ]
 
 .panel[.panel-name[Plot]
-&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-23-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-22-1.png" width="75%" style="display: block; margin: auto;" /&gt;
 ]
 
 ]
@@ -496,7 +493,7 @@ ggplot(trump_longer,
 ]
 
 .panel[.panel-name[Plot]
-&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-24-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d09-tidying_files/figure-html/unnamed-chunk-23-1.png" width="75%" style="display: block; margin: auto;" /&gt;
 ]
 
 ]

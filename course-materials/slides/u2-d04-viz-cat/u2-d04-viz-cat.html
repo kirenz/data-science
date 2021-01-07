@@ -157,6 +157,54 @@ Which bar plot is a more useful representation for visualizing the relationship 
 ]
 ]
 
+
+---
+
+## Segmented bar plot
+
+
+.panelset[
+.panel[.panel-name[Plot]
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+.panel[.panel-name[Code]
+
+```r
+ggplot(loans, aes(y = homeownership, 
+                  fill = grade)) +
+* geom_bar(position = "dodge") +
+  labs( 
+    x = "Proportion", 
+    y = "Homeownership", 
+    fill = "Grade", 
+    title = "Grades of Lending Club loans", 
+    subtitle = "and homeownership of lendee"
+  ) 
+```
+]
+]
+
+---
+
+class: middle
+
+# Heatmap
+
+
+---
+
+## Heatmap
+
+
+```r
+  ggplot(loans, aes(x = homeownership, grade)) +
+  geom_bin2d() +
+  scale_fill_gradient(low = "gray85", high = "steelblue") 
+```
+
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-10-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
 ---
 
 class: middle
@@ -180,7 +228,7 @@ ggplot(loans, aes(x = homeownership, y = loan_amount)) +
   geom_violin()
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-11-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -193,9 +241,16 @@ ggplot(loans, aes(x = loan_amount, y = grade, fill = grade, color = grade)) +
   geom_density_ridges(alpha = 0.5)
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-10-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-12-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
+
+## Ridge plots
+
+* A Ridgeline plot (sometimes called Joyplot) shows the distribution of a numeric value for several groups. 
+
+* Distribution can be represented using histograms or density plots, all aligned to the same horizontal scale and presented with a slight overlap (see [data-to-viz](https://www.data-to-viz.com/graph/ridgeline.html)) .
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

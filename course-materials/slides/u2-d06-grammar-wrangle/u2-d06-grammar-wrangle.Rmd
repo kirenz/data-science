@@ -27,11 +27,10 @@ library(tidyverse)
 
 ---
 
-.small[*The following content is based on Mine Çetinkaya-Rundel's excellent book Data Science in a Box*
-]
-
-
 class: middle
+
+.small[*The following content is based on Mine Çetinkaya-Rundel's excellent material in "Data Science in a Box"*
+]
 
 # Grammar of data wrangling
 

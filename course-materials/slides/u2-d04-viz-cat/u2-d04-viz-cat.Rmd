@@ -135,6 +135,51 @@ ggplot(loans, aes(y = homeownership, #<<
 ]
 ]
 
+
+---
+
+## Segmented bar plot
+
+
+.panelset[
+.panel[.panel-name[Plot]
+```{r ref.label = "bar-segment", echo = FALSE, warning = FALSE}
+```
+]
+.panel[.panel-name[Code]
+```{r bar-segment, fig.show = "hide", warning = FALSE}
+ggplot(loans, aes(y = homeownership, 
+                  fill = grade)) +
+  geom_bar(position = "dodge") + #<<
+  labs( 
+    x = "Proportion", 
+    y = "Homeownership", 
+    fill = "Grade", 
+    title = "Grades of Lending Club loans", 
+    subtitle = "and homeownership of lendee"
+  ) 
+```
+]
+]
+
+---
+
+class: middle
+
+# Heatmap
+
+
+---
+
+## Heatmap
+
+```{r}
+  ggplot(loans, aes(x = homeownership, grade)) +
+  geom_bin2d() +
+  scale_fill_gradient(low = "gray85", high = "steelblue") 
+```
+
+
 ---
 
 class: middle
@@ -167,4 +212,11 @@ ggplot(loans, aes(x = loan_amount, y = grade, fill = grade, color = grade)) +
   geom_density_ridges(alpha = 0.5)
 ```
 
+---
+
+## Ridge plots
+
+* A Ridgeline plot (sometimes called Joyplot) shows the distribution of a numeric value for several groups. 
+
+* Distribution can be represented using histograms or density plots, all aligned to the same horizontal scale and presented with a slight overlap (see [data-to-viz](https://www.data-to-viz.com/graph/ridgeline.html)) .
 
