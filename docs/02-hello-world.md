@@ -27,14 +27,13 @@ You have to join the workspace to use the sample application exercises.
 > ::: {.source}
 > [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd)
 > :::
->
+
 > **Option 2 - COVID-19**
 >
 > ::: {.source}
 > [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
 > :::
->
-> :::
+:::
 
 ::: {.slide-deck}
 **Unit 1 - Deck 2: Meet the toolkit - Programming**
@@ -70,4 +69,5 @@ You have to join the workspace to use the sample application exercises.
 ::: {.source}
 [Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git.Rmd)
 :::
+
 :::
