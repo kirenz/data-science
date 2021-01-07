@@ -173,6 +173,10 @@ R4DS :: [Chp 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d09-tidying/u2-d09-tidying.pdf)
 :::
 
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d09-tidying/u2-d09-tidying-code.pdf)
+:::
+
 ::: {.source}
 [Source](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d09-tidying)
 :::
@@ -186,7 +190,7 @@ R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
 **Hotels + Data wrangling**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-04-hotels-datawrangling/hotels-datawrangling.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-04-hotels-datawrangling/hotels-datawrangling.Rmd)
 :::
 :::
 
@@ -243,6 +247,10 @@ R4DS :: [Chp 11 - Data import](https://r4ds.had.co.nz/data-import.html)
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d13-data-recode/u2-d13-data-recode.pdf)
 :::
 
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d13-data-recode/u2-d13-data-recode-code.pdf)
+:::
+
 ::: {.source}
 [Source](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d13-data-recode)
 :::
@@ -256,11 +264,11 @@ R4DS :: [Sec 16.1 - 16.3 - Dates and times](https://r4ds.had.co.nz/dates-and-tim
 **Hotels + Data types**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-05-hotels-datatypes/hotels-forcats.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-05-hotels-datatypes/hotels-forcats.Rmd)
 :::
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-05-hotels-datatypes/type-coercion.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-05-hotels-datatypes/type-coercion.Rmd)
 :::
 :::
 
@@ -268,11 +276,11 @@ R4DS :: [Sec 16.1 - 16.3 - Dates and times](https://r4ds.had.co.nz/dates-and-tim
 **Nobels + Sales + Data import**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-06-nobels-sales-dataimport/nobels-csv.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-06-nobels-sales-dataimport/nobels-csv.Rmd)
 :::
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-06-nobels-sales-dataimport/sales-excel.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-06-nobels-sales-dataimport/sales-excel.Rmd)
 :::
 :::
 
@@ -283,6 +291,10 @@ R4DS :: [Sec 16.1 - 16.3 - Dates and times](https://r4ds.had.co.nz/dates-and-tim
 
 ::: {.slides}
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d14-effective-dataviz/u2-d14-effective-dataviz.pdf)
+:::
+
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d14-effective-dataviz/u2-d14-effective-dataviz-code.pdf)
 :::
 
 ::: {.source}
@@ -298,7 +310,7 @@ IMS :: [Sec 2.3 - Effective data visualisation](https://openintro-ims.netlify.ap
 **Brexit + Telling stories with dataviz**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-07-brexit-story-dataviz/brexit.Rmd)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-07-brexit-story-dataviz/brexit.Rmd)
 :::
 :::
 
@@ -326,6 +338,10 @@ IMS :: [Sec 2.3 - Effective data visualisation](https://openintro-ims.netlify.ap
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d16-simpsons-paradox/u2-d16-simpsons-paradox.pdf)
 :::
 
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d16-simpsons-paradox/u2-d16-simpsons-paradox-code.pdf)
+:::
+
 ::: {.source}
 [Source](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d16-simpsons-paradox)
 :::
@@ -336,6 +352,10 @@ IMS :: [Sec 2.3 - Effective data visualisation](https://openintro-ims.netlify.ap
 
 ::: {.slides}
 [Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d17-doing-data-science/u2-d17-doing-data-science.pdf)
+:::
+
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d17-doing-data-science/u2-d17-doing-data-science-code.pdf)
 :::
 
 ::: {.source}
@@ -365,11 +385,15 @@ R4DS :: [Chp 7 - Exploratory data analysis](https://r4ds.had.co.nz/exploratory-d
 **Unit 2 - Deck 19: Scraping top 250 movies on IMDB**
 
 ::: {.slides}
-[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d18-web-scrape/u2-d18-web-scrape.pdf)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d19-top-250-imdb/u2-d19-top-250-imdb.pdf)
+:::
+
+::: {.slides}
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d19-top-250-imdb/u2-d19-top-250-imdb-code.pdf)
 :::
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d18-web-scrape)
+[Source](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d19-top-250-imdb)
 :::
 :::
 
@@ -389,7 +413,7 @@ R4DS :: [Chp 7 - Exploratory data analysis](https://r4ds.had.co.nz/exploratory-d
 **IMDB + Web scraping**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-08-imdb-webscraping)
+[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-08-imdb-webscraping)
 :::
 :::
 
