@@ -3,7 +3,7 @@ knit: "bookdown::render_book"
 title: "Data Science Basics"
 author: "Jan Kirenz"
 description: "Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source."
-date: "`r Sys.Date()`"
+date: "2021-01-07"
 github-repo: kirenz/data-science
 cover-image: dsbox.png
 site: bookdown::bookdown_site

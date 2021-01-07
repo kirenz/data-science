@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 14 Accessing R | Data Science Basics</title>
+  <meta name="description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="generator" content="bookdown 0.21.6 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 14 Accessing R | Data Science Basics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/dsbox.png" />
+  <meta property="og:description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="github-repo" content="kirenz/data-science" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 14 Accessing R | Data Science Basics" />
+  
+  <meta name="twitter:description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="twitter:image" content="/dsbox.png" />
+
+<meta name="author" content="Jan Kirenz" />
+
+
+<meta name="date" content="2021-01-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="exams.html"/>
+<link rel="next" href="version-control.html"/>
+<script src="libs/header-attrs-2.6.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/dsbox.css" type="text/css" />
+<link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science Basics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledements"><i class="fa fa-check"></i>Acknowledements</a></li>
+</ul></li>
+<li class="part"><span><b>I Hello #dsbox!</b></span></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="overview.html"><a href="overview.html#who-is-this-course-for"><i class="fa fa-check"></i><b>1.1</b> Who is this course for?</a></li>
+<li class="chapter" data-level="1.2" data-path="overview.html"><a href="overview.html#where-does-this-course-fit-in-a-curriculum"><i class="fa fa-check"></i><b>1.2</b> Where does this course fit in a curriculum?</a></li>
+<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#what-is-in-the-box"><i class="fa fa-check"></i><b>1.3</b> What is in the box?</a></li>
+<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#why-r"><i class="fa fa-check"></i><b>1.4</b> Why R?</a></li>
+<li class="chapter" data-level="1.5" data-path="overview.html"><a href="overview.html#why-not-language-x"><i class="fa fa-check"></i><b>1.5</b> Why not language X?</a></li>
+<li class="chapter" data-level="1.6" data-path="overview.html"><a href="overview.html#why-rstudio"><i class="fa fa-check"></i><b>1.6</b> Why RStudio?</a></li>
+<li class="chapter" data-level="1.7" data-path="overview.html"><a href="overview.html#learn-more"><i class="fa fa-check"></i><b>1.7</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="design-principles.html"><a href="design-principles.html"><i class="fa fa-check"></i><b>2</b> Design principles</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="design-principles.html"><a href="design-principles.html#start-with-cake"><i class="fa fa-check"></i><b>2.1</b> Start with cake</a></li>
+<li class="chapter" data-level="2.2" data-path="design-principles.html"><a href="design-principles.html#cherish-day-one"><i class="fa fa-check"></i><b>2.2</b> Cherish day one</a></li>
+<li class="chapter" data-level="2.3" data-path="design-principles.html"><a href="design-principles.html#skip-baby-steps"><i class="fa fa-check"></i><b>2.3</b> Skip baby steps</a></li>
+<li class="chapter" data-level="2.4" data-path="design-principles.html"><a href="design-principles.html#hide-the-veggies"><i class="fa fa-check"></i><b>2.4</b> Hide the veggies</a></li>
+<li class="chapter" data-level="2.5" data-path="design-principles.html"><a href="design-principles.html#leverage-the-ecosystem"><i class="fa fa-check"></i><b>2.5</b> Leverage the ecosystem</a></li>
+<li class="chapter" data-level="2.6" data-path="design-principles.html"><a href="design-principles.html#learn-more-1"><i class="fa fa-check"></i><b>2.6</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="topics.html"><a href="topics.html"><i class="fa fa-check"></i><b>3</b> Topics</a></li>
+<li class="chapter" data-level="4" data-path="tech-stack.html"><a href="tech-stack.html"><i class="fa fa-check"></i><b>4</b> Tech stack</a></li>
+<li class="chapter" data-level="5" data-path="community.html"><a href="community.html"><i class="fa fa-check"></i><b>5</b> Community</a></li>
+<li class="part"><span><b>II Course content</b></span></li>
+<li class="chapter" data-level="6" data-path="hello-world.html"><a href="hello-world.html"><i class="fa fa-check"></i><b>6</b> Hello world</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hello-world.html"><a href="hello-world.html#slides-videos-and-application-exercises"><i class="fa fa-check"></i><b>6.1</b> Slides, videos, and application exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>7</b> Exploring data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="exploring-data.html"><a href="exploring-data.html#slides-videos-and-application-exercises-1"><i class="fa fa-check"></i><b>7.1</b> Slides, videos, and application exercises</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="exploring-data.html"><a href="exploring-data.html#visualising-data"><i class="fa fa-check"></i><b>7.1.1</b> Visualising data</a></li>
+<li class="chapter" data-level="7.1.2" data-path="exploring-data.html"><a href="exploring-data.html#wrangling-and-tidying-data"><i class="fa fa-check"></i><b>7.1.2</b> Wrangling and tidying data</a></li>
+<li class="chapter" data-level="7.1.3" data-path="exploring-data.html"><a href="exploring-data.html#importing-and-recoding-data"><i class="fa fa-check"></i><b>7.1.3</b> Importing and recoding data</a></li>
+<li class="chapter" data-level="7.1.4" data-path="exploring-data.html"><a href="exploring-data.html#communicating-data-science-results-effectively"><i class="fa fa-check"></i><b>7.1.4</b> Communicating data science results effectively</a></li>
+<li class="chapter" data-level="7.1.5" data-path="exploring-data.html"><a href="exploring-data.html#web-scraping-and-programming"><i class="fa fa-check"></i><b>7.1.5</b> Web scraping and programming</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="exploring-data.html"><a href="exploring-data.html#labs"><i class="fa fa-check"></i><b>7.2</b> Labs</a></li>
+<li class="chapter" data-level="7.3" data-path="exploring-data.html"><a href="exploring-data.html#homework-assignments"><i class="fa fa-check"></i><b>7.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ethics.html"><a href="ethics.html"><i class="fa fa-check"></i><b>8</b> Data science ethics</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ethics.html"><a href="ethics.html#slides-videos-and-application-exercises-2"><i class="fa fa-check"></i><b>8.1</b> Slides, videos, and application exercises</a></li>
+<li class="chapter" data-level="8.2" data-path="ethics.html"><a href="ethics.html#labs-1"><i class="fa fa-check"></i><b>8.2</b> Labs</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html"><i class="fa fa-check"></i><b>9</b> Making rigorous conclusions</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#slides-videos-and-application-exercises-3"><i class="fa fa-check"></i><b>9.1</b> Slides, videos, and application exercises</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#modelling-data"><i class="fa fa-check"></i><b>9.1.1</b> Modelling data</a></li>
+<li class="chapter" data-level="9.1.2" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#classification-and-model-building"><i class="fa fa-check"></i><b>9.1.2</b> Classification and model building</a></li>
+<li class="chapter" data-level="9.1.3" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#model-validation"><i class="fa fa-check"></i><b>9.1.3</b> Model validation</a></li>
+<li class="chapter" data-level="9.1.4" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#uncertainty-quantification"><i class="fa fa-check"></i><b>9.1.4</b> Uncertainty quantification</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#labs-2"><i class="fa fa-check"></i><b>9.2</b> Labs</a></li>
+<li class="chapter" data-level="9.3" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#homework-assignments-1"><i class="fa fa-check"></i><b>9.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="looking-forward.html"><a href="looking-forward.html"><i class="fa fa-check"></i><b>10</b> Looking further</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="looking-forward.html"><a href="looking-forward.html#slides-videos-and-application-exercises-4"><i class="fa fa-check"></i><b>10.1</b> Slides, videos, and application exercises</a></li>
+<li class="chapter" data-level="10.2" data-path="looking-forward.html"><a href="looking-forward.html#labs-3"><i class="fa fa-check"></i><b>10.2</b> Labs</a></li>
+<li class="chapter" data-level="10.3" data-path="looking-forward.html"><a href="looking-forward.html#homework-assignments-2"><i class="fa fa-check"></i><b>10.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="interactive-tutorials.html"><a href="interactive-tutorials.html"><i class="fa fa-check"></i><b>11</b> Interactive tutorials</a></li>
+<li class="chapter" data-level="12" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>12</b> Project</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="project.html"><a href="project.html#tldr"><i class="fa fa-check"></i><b>12.1</b> TL;DR</a></li>
+<li class="chapter" data-level="12.2" data-path="project.html"><a href="project.html#may-be-too-long-but-please-do-read"><i class="fa fa-check"></i><b>12.2</b> May be too long, but please do read</a></li>
+<li class="chapter" data-level="12.3" data-path="project.html"><a href="project.html#data"><i class="fa fa-check"></i><b>12.3</b> Data</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="project.html"><a href="project.html#deliverables"><i class="fa fa-check"></i><b>12.3.1</b> Deliverables</a></li>
+<li class="chapter" data-level="12.3.2" data-path="project.html"><a href="project.html#tips"><i class="fa fa-check"></i><b>12.3.2</b> Tips</a></li>
+<li class="chapter" data-level="12.3.3" data-path="project.html"><a href="project.html#marking"><i class="fa fa-check"></i><b>12.3.3</b> Marking</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="exams.html"><a href="exams.html"><i class="fa fa-check"></i><b>13</b> Exams</a></li>
+<li class="part"><span><b>III Infrastructure</b></span></li>
+<li class="chapter" data-level="14" data-path="access-r.html"><a href="access-r.html"><i class="fa fa-check"></i><b>14</b> Accessing R</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="access-r.html"><a href="access-r.html#setting-up-your-course-in-rstudio-cloud"><i class="fa fa-check"></i><b>14.1</b> Setting up your course in RStudio Cloud</a></li>
+<li class="chapter" data-level="14.2" data-path="access-r.html"><a href="access-r.html#projects"><i class="fa fa-check"></i><b>14.2</b> Projects</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="access-r.html"><a href="access-r.html#access"><i class="fa fa-check"></i><b>14.2.1</b> Access</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="access-r.html"><a href="access-r.html#base-project-template"><i class="fa fa-check"></i><b>14.3</b> Base project template</a></li>
+<li class="chapter" data-level="14.4" data-path="access-r.html"><a href="access-r.html#git-integration"><i class="fa fa-check"></i><b>14.4</b> Git integration</a></li>
+<li class="chapter" data-level="14.5" data-path="access-r.html"><a href="access-r.html#troubleshooting"><i class="fa fa-check"></i><b>14.5</b> Troubleshooting</a></li>
+<li class="chapter" data-level="14.6" data-path="access-r.html"><a href="access-r.html#limits"><i class="fa fa-check"></i><b>14.6</b> Limits</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="access-r.html"><a href="access-r.html#memory-cpu"><i class="fa fa-check"></i><b>14.6.1</b> Memory &amp; CPU</a></li>
+<li class="chapter" data-level="14.6.2" data-path="access-r.html"><a href="access-r.html#other-limits"><i class="fa fa-check"></i><b>14.6.2</b> Other limits</a></li>
+</ul></li>
+<li class="chapter" data-level="14.7" data-path="access-r.html"><a href="access-r.html#learn-more-2"><i class="fa fa-check"></i><b>14.7</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i><b>15</b> Version control</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="version-control.html"><a href="version-control.html#git"><i class="fa fa-check"></i><b>15.1</b> Git</a></li>
+<li class="chapter" data-level="15.2" data-path="version-control.html"><a href="version-control.html#github"><i class="fa fa-check"></i><b>15.2</b> GitHub</a></li>
+<li class="chapter" data-level="15.3" data-path="version-control.html"><a href="version-control.html#ghclass"><i class="fa fa-check"></i><b>15.3</b> ghclass</a></li>
+<li class="chapter" data-level="15.4" data-path="version-control.html"><a href="version-control.html#learn-more-3"><i class="fa fa-check"></i><b>15.4</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>16</b> Discussion</a></li>
+<li class="chapter" data-level="17" data-path="sharing.html"><a href="sharing.html"><i class="fa fa-check"></i><b>17</b> Sharing</a></li>
+<li class="chapter" data-level="18" data-path="alternative-setups.html"><a href="alternative-setups.html"><i class="fa fa-check"></i><b>18</b> Alternative setups</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="alternative-setups.html"><a href="alternative-setups.html#centralized-rstudio-server"><i class="fa fa-check"></i><b>18.1</b> Centralized RStudio server</a></li>
+<li class="chapter" data-level="18.2" data-path="alternative-setups.html"><a href="alternative-setups.html#dockerized-rstudio-server"><i class="fa fa-check"></i><b>18.2</b> Dockerized RStudio server</a></li>
+<li class="chapter" data-level="18.3" data-path="alternative-setups.html"><a href="alternative-setups.html#learn-more-4"><i class="fa fa-check"></i><b>18.3</b> Learn more</a></li>
+</ul></li>
+<li class="part"><span><b>IV Pedagogy</b></span></li>
+<li class="chapter" data-level="19" data-path="pedagogy.html"><a href="pedagogy.html"><i class="fa fa-check"></i><b>19</b> Pedagogy</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="pedagogy.html"><a href="pedagogy.html#course-design"><i class="fa fa-check"></i><b>19.1</b> Course design</a></li>
+<li class="chapter" data-level="19.2" data-path="pedagogy.html"><a href="pedagogy.html#teaching-the-tidyverse"><i class="fa fa-check"></i><b>19.2</b> Teaching the tidyverse</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="schedule.html"><a href="schedule.html"><i class="fa fa-check"></i><b>20</b> Schedule</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="schedule.html"><a href="schedule.html#week-schedule"><i class="fa fa-check"></i><b>20.1</b> 11-week schedule</a></li>
+<li class="chapter" data-level="20.2" data-path="schedule.html"><a href="schedule.html#week-schedule-1"><i class="fa fa-check"></i><b>20.2</b> 15-week schedule</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Basics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="access-r" class="section level1" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Accessing R</h1>
+<p>One of the design principles of this course is “cherish day one” – get students from nothing to their first meaningful data visualization within the first 10 minutes of the course.
+Achieving this is possible, but requires careful consideration of the computing infrastructure.
+This section outlines how one can set up their course to run on RStudio Cloud, use GitHub for not only version control and collaboration but also as the learning management system for the course, and build their course materials with packages from the <code>*down</code> universe (<strong>rmarkdown</strong>, <strong>blogdown</strong>, <strong>xaringan</strong>, etc.).
+Lastly, the alternative setups section describes other approaches to setting up the computing infrastructure that can be just as efficient and effective as the ones described in the main choices for the course, and discusses pros and cons.</p>
+<p>The RStudio IDE includes a viewable environment, a file browser, data viewer, and a plotting pane, which makes it less intimidating than the bare R shell.
+Additionally, since it is a full fledged IDE, it also features integrated help, syntax highlighting, and context-aware tab completion, which are all powerful tools that help flatten the learning curve.</p>
+<p><a href="https://rstudio.cloud/">RStudio Cloud</a> is a managed cloud instance of the RStudio IDE. We recommend having students access RStudio via RStudio Cloud as opposed to using a local installation.
+The main reason for this choice is reducing friction at first exposure to R.
+Local installation can be difficult to manage, both for the student and the instructor, and can shift the focus away from data science learning at the beginning of the course.
+We discuss in further detail the reasons for avoiding local installation at the beginning of the course in Section <a href="design-principles.html#design-principles">2</a>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>When you create an account on RStudio Cloud, you get a workspace of your own, and the projects you create here can be public or private.
+You can also add a new workspace and control its permissions, and the projects you create here can also be public or private.</p>
+<div class="rstudio-cloud">
+<p>The RStudio Cloud workspace for Data Science Course in a Box project is <a href="https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK">here</a>.
+You can join the workspace and play around with the application exercises.</p>
+</div>
+<p>A natural way to set up a course in RStudio Cloud is using a private workspace.
+In this structure a classroom (a cohort of students in one semester of the course) maps to a workspace.
+Once a workspace is set up, instructors can invite students to the workspace via an invite link.
+Workspaces allow for various permission levels which can be assigned to students, teaching assistants, and instructors.
+Then, each assignment/project in the course maps to an RStudio Cloud project.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-bigpicture"></span>
+<img src="images/rscloud-bigpicture.png" alt="RStudio Cloud classroom structure" width="70%" />
+<p class="caption">
+Figure 14.1: RStudio Cloud classroom structure
+</p>
+</div>
+<div id="setting-up-your-course-in-rstudio-cloud" class="section level2" number="14.1">
+<h2><span class="header-section-number">14.1</span> Setting up your course in RStudio Cloud</h2>
+<p>First, create a new workspace on RStudio Cloud.
+By default, this new workspace will be a private workspace.
+All it takes to create a new workspace is a name and brief information for the space.
+You can update the information once the space is created, however you can’t change the name of the space.
+For the name,<br />
+I recommend using something along the lines of Course number - Semester.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-new-workspace"></span>
+<img src="images/rscloud-new-workspace.png" alt="Creating a new workspace on RStudio Cloud" width="70%" />
+<p class="caption">
+Figure 14.2: Creating a new workspace on RStudio Cloud
+</p>
+</div>
+<p>Next step is to invite members to the workspace.
+You can do this by sending invitations or using a sharing link.
+I recommend using the latter approach for efficiency.
+Once all of your students are in the course (or once drop/add period ends) you can change the settings so that additional members cannot join throughout the semester using the sharing link, and can only be added via an invitation from the instructor.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-workspace-permissions"></span>
+<img src="images/rscloud-workspace-permissions.png" alt="Setting workspace permissions" width="70%" />
+<p class="caption">
+Figure 14.3: Setting workspace permissions
+</p>
+</div>
+<p>As highlighted in the figure above, when a workspace is set to accept members via a shared link, the owner can also set a default permission level for those entering the workspace via the sharing link.
+Suggested permission levels and suggestions for mapping to course roles are as follows.</p>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="54%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>RStudio Cloud role</th>
+<th>Permissions</th>
+<th>Course role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admin</td>
+<td>Manage users, view, edit and manage all projects</td>
+<td>Instructor</td>
+</tr>
+<tr class="even">
+<td>Moderator</td>
+<td>View, edit and manage all projects</td>
+<td>Teaching Assistant</td>
+</tr>
+<tr class="odd">
+<td>Contributor</td>
+<td>Create, edit and manage their own projects</td>
+<td>Student</td>
+</tr>
+<tr class="even">
+<td>Viewer</td>
+<td>View projects shared with everyone</td>
+<td>Auditor, Visitor</td>
+</tr>
+</tbody>
+</table>
+<p>This set of permissions will allow instructors full access including management of users.
+Teaching assistants will be able to peek into student projects, which can be very useful when helping troubleshoot.
+Students won’t be able to see each others’ projects.
+Students auditing your course or visitors, such as colleagues wanting to view/experience your course setup will have limited access.</p>
+<p>RStudio Cloud also allows you to specify who can see the list of members.
+Admins and moderators can, by default, see all members of the workspace.
+I prefer to allow contributors (students) to see the list of members and viewers (auditors and visitors) to not since course enrollment information should not be available to non-official members of the course.</p>
+</div>
+<div id="projects" class="section level2" number="14.2">
+<h2><span class="header-section-number">14.2</span> Projects</h2>
+<p>A project in RStudio Cloud is equivalent to an RStudio project.
+If you are an RStudio user, but you don’t use projects, I highly recommend considering switching your workflow to include projects.
+You can learn more about them <a href="http://r4ds.had.co.nz/workflow-projects.html#rstudio-projects">here</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-new-project"></span>
+<img src="images/rscloud-new-project.png" alt="A new project in RStudio Cloud is a new project in the RStudio IDE" width="70%" />
+<p class="caption">
+Figure 14.4: A new project in RStudio Cloud is a new project in the RStudio IDE
+</p>
+</div>
+<div id="access" class="section level3" number="14.2.1">
+<h3><span class="header-section-number">14.2.1</span> Access</h3>
+<p>When you create a new project in your workspace, it is by default visible only to you plus the admins and moderators of the space.
+This default has two advantages:</p>
+<ol style="list-style-type: decimal">
+<li>It allows you to develop a project semi-privately and actively decide when the project is ready to be shared with students. This can be especially beneficial when developing an assessment like an exam.</li>
+<li>It means when a student creates a project in the workspace it’s not, by default, visible to other students.</li>
+</ol>
+<p>When your project is ready to be shared with the students in your course, you can adjust the access level by clicking on the gear icon to reveal the settings menu.
+You should also check the “Make this project an assignment” box so that when a student starts their assignment RStudio Cloud automatically makes a copy of the project for them.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-project-permissions"></span>
+<img src="images/rscloud-project-permissions.png" alt="Setting project permissions within a workspace" width="70%" />
+<p class="caption">
+Figure 14.5: Setting project permissions within a workspace
+</p>
+</div>
+</div>
+</div>
+<div id="base-project-template" class="section level2" number="14.3">
+<h2><span class="header-section-number">14.3</span> Base project template</h2>
+<p>If you consistently use a particular set of packages and/or need a particular set of documents to be included in each project, the base project template functionality will come in very handy.
+You can use this by defining a base project template for the space.
+Simply create a new project and add any packages or files you want projects created in the space to start with.
+After creating your project, select it on the Settings page as the base project template.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-base-template"></span>
+<img src="images/rscloud-base-template.png" alt="Selecting a base project template" width="70%" />
+<p class="caption">
+Figure 14.6: Selecting a base project template
+</p>
+</div>
+<p>Note that a project must be shared with everyone in the space in order to be used as a template; only projects which are viewable by everyone in the space will appear in the templates list.</p>
+<p>You can update your base project as many times as you want throughout the semester.
+The base template is applied prospectively – it only effects projects created after the template has been set.
+Therefore updating the base project will not break projects already created with the previous version of a base project.</p>
+</div>
+<div id="git-integration" class="section level2" number="14.4">
+<h2><span class="header-section-number">14.4</span> Git integration</h2>
+<p>It is possible to create (clone) a new project in RStudio Cloud from a GitHub repository, just like in the RStudio IDE.</p>
+<div class="figure" style="text-align: center"><span id="fig:rscloud-git-project"></span>
+<img src="images/rscloud-git-project.png" alt="Creating a new project from GitHub repository" width="70%" />
+<p class="caption">
+Figure 14.7: Creating a new project from GitHub repository
+</p>
+</div>
+<p>If you have a base project template set up for your workspace, this new project created from GitHub will also have the packages installed in the base project template.</p>
+<p>For more on using Git and GitHub in the classroom, see Section <a href="version-control.html#version-control">15</a>.</p>
+</div>
+<div id="troubleshooting" class="section level2" number="14.5">
+<h2><span class="header-section-number">14.5</span> Troubleshooting</h2>
+<p>I strongly recommend that you make a second account for themselves on RStudio Cloud and add that user as a contributor to the workspace to be able to see what your students see when they log in.
+It’s a great way to test out functionality and resolve unexpected issues your students might encounter, before they encounter them.
+I recommend using an incognito browser window for the student account so that you can stay logged in both as a student and as the instructor at the same time and test the student view as you develop content as an instructor.</p>
+<p>One huge advantage of your students working in RStudio Cloud is that you as the instructor, and anyone with an admin and moderator role, can peek into student projects.
+While it is important for your students to learn to ask questions in a way that does not depend on someone else being able to see their work directly (and for this I strongly recommend teaching students to make <a href="https://www.tidyverse.org/help/#reprex">reprexes</a>), it is sometimes, especially early on, nice to be able to peek into a student’s project.</p>
+</div>
+<div id="limits" class="section level2" number="14.6">
+<h2><span class="header-section-number">14.6</span> Limits</h2>
+<div id="memory-cpu" class="section level3" number="14.6.1">
+<h3><span class="header-section-number">14.6.1</span> Memory &amp; CPU</h3>
+<p>Each project on RStudio Cloud is allocated 1 GB of RAM and 1 CPU by default.
+While this is a pretty generous limit, actions like joining very large tables or fitting complicated models could exceed the limit.</p>
+<p>I recommend testing out the any work you assign, especially those using large datasets, in order to avoid unexpected hiccups due to out of memory issues.
+One challenge is that you might have no control over what issues students might run into if they are working on an open ended project using a dataset of their own choice.
+In these circumstances it’s helpful to keep in the back of your mind that one way an out of memory issue can present itself is with the RStudio Cloud project crashing.</p>
+</div>
+<div id="other-limits" class="section level3" number="14.6.2">
+<h3><span class="header-section-number">14.6.2</span> Other limits</h3>
+<p>For most up to date information on limits on free RStudio Cloud accounts, as well as any other technical details, see the <a href="https://rstudio.cloud/learn/guide#limits">RStudio Cloud Guide</a>.
+This document gets updated as changes are made to the user interface and/or the backend of RStudio Cloud and should be assumed to be more current than the information outlined here.</p>
+</div>
+</div>
+<div id="learn-more-2" class="section level2" number="14.7">
+<h2><span class="header-section-number">14.7</span> Learn more</h2>
+<p>To see this all in action and learn more, watch the following RStudio Cloud webinars:</p>
+<ul>
+<li><a href="https://mine-cetinkaya-rundel.github.io/teach-r-online/">Teaching R online with RStudio Cloud</a> (July 2020)</li>
+<li><a href="https://resources.rstudio.com/webinars/rstudio-cloud-in-the-classroom">Teaching R online with RStudio Cloud</a> (March 2020)</li>
+<li><a href="https://resources.rstudio.com/webinars/rstudio-cloud-in-the-classroom">RStudio Cloud in the Classroom</a></li>
+</ul>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>Note that as of August 2020 RStudio Cloud offers paid tiers as well, and you will likely need a paid subscription to teach with RStudio Cloud (unless you’re teaching a short, small course).
+Depending on your institution’s IT infrastructure and your class size, RStudio Cloud may or may not be the most economically feasible solution for your teaching needs.
+See Section <a href="alternative-setups.html#alternative-setups">18</a> for suggestions for other setups for providing server access to RStudio for your students.
+Note that these alternatives generally require system infrastructure expertiose or IT professional time.<a href="access-r.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="exams.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="version-control.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

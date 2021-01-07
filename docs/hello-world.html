@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Hello world | Data Science Basics</title>
+  <meta name="description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="generator" content="bookdown 0.21.6 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Hello world | Data Science Basics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/dsbox.png" />
+  <meta property="og:description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="github-repo" content="kirenz/data-science" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Hello world | Data Science Basics" />
+  
+  <meta name="twitter:description" content="Data Science in a Box contains the materials required to teach (or learn from) the course described above, all of which are freely-available and open-source." />
+  <meta name="twitter:image" content="/dsbox.png" />
+
+<meta name="author" content="Jan Kirenz" />
+
+
+<meta name="date" content="2021-01-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="community.html"/>
+<link rel="next" href="exploring-data.html"/>
+<script src="libs/header-attrs-2.6.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/dsbox.css" type="text/css" />
+<link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science Basics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledements"><i class="fa fa-check"></i>Acknowledements</a></li>
+</ul></li>
+<li class="part"><span><b>I Hello #dsbox!</b></span></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="overview.html"><a href="overview.html#who-is-this-course-for"><i class="fa fa-check"></i><b>1.1</b> Who is this course for?</a></li>
+<li class="chapter" data-level="1.2" data-path="overview.html"><a href="overview.html#where-does-this-course-fit-in-a-curriculum"><i class="fa fa-check"></i><b>1.2</b> Where does this course fit in a curriculum?</a></li>
+<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#what-is-in-the-box"><i class="fa fa-check"></i><b>1.3</b> What is in the box?</a></li>
+<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#why-r"><i class="fa fa-check"></i><b>1.4</b> Why R?</a></li>
+<li class="chapter" data-level="1.5" data-path="overview.html"><a href="overview.html#why-not-language-x"><i class="fa fa-check"></i><b>1.5</b> Why not language X?</a></li>
+<li class="chapter" data-level="1.6" data-path="overview.html"><a href="overview.html#why-rstudio"><i class="fa fa-check"></i><b>1.6</b> Why RStudio?</a></li>
+<li class="chapter" data-level="1.7" data-path="overview.html"><a href="overview.html#learn-more"><i class="fa fa-check"></i><b>1.7</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="design-principles.html"><a href="design-principles.html"><i class="fa fa-check"></i><b>2</b> Design principles</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="design-principles.html"><a href="design-principles.html#start-with-cake"><i class="fa fa-check"></i><b>2.1</b> Start with cake</a></li>
+<li class="chapter" data-level="2.2" data-path="design-principles.html"><a href="design-principles.html#cherish-day-one"><i class="fa fa-check"></i><b>2.2</b> Cherish day one</a></li>
+<li class="chapter" data-level="2.3" data-path="design-principles.html"><a href="design-principles.html#skip-baby-steps"><i class="fa fa-check"></i><b>2.3</b> Skip baby steps</a></li>
+<li class="chapter" data-level="2.4" data-path="design-principles.html"><a href="design-principles.html#hide-the-veggies"><i class="fa fa-check"></i><b>2.4</b> Hide the veggies</a></li>
+<li class="chapter" data-level="2.5" data-path="design-principles.html"><a href="design-principles.html#leverage-the-ecosystem"><i class="fa fa-check"></i><b>2.5</b> Leverage the ecosystem</a></li>
+<li class="chapter" data-level="2.6" data-path="design-principles.html"><a href="design-principles.html#learn-more-1"><i class="fa fa-check"></i><b>2.6</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="topics.html"><a href="topics.html"><i class="fa fa-check"></i><b>3</b> Topics</a></li>
+<li class="chapter" data-level="4" data-path="tech-stack.html"><a href="tech-stack.html"><i class="fa fa-check"></i><b>4</b> Tech stack</a></li>
+<li class="chapter" data-level="5" data-path="community.html"><a href="community.html"><i class="fa fa-check"></i><b>5</b> Community</a></li>
+<li class="part"><span><b>II Course content</b></span></li>
+<li class="chapter" data-level="6" data-path="hello-world.html"><a href="hello-world.html"><i class="fa fa-check"></i><b>6</b> Hello world</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hello-world.html"><a href="hello-world.html#slides-videos-and-application-exercises"><i class="fa fa-check"></i><b>6.1</b> Slides, videos, and application exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>7</b> Exploring data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="exploring-data.html"><a href="exploring-data.html#slides-videos-and-application-exercises-1"><i class="fa fa-check"></i><b>7.1</b> Slides, videos, and application exercises</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="exploring-data.html"><a href="exploring-data.html#visualising-data"><i class="fa fa-check"></i><b>7.1.1</b> Visualising data</a></li>
+<li class="chapter" data-level="7.1.2" data-path="exploring-data.html"><a href="exploring-data.html#wrangling-and-tidying-data"><i class="fa fa-check"></i><b>7.1.2</b> Wrangling and tidying data</a></li>
+<li class="chapter" data-level="7.1.3" data-path="exploring-data.html"><a href="exploring-data.html#importing-and-recoding-data"><i class="fa fa-check"></i><b>7.1.3</b> Importing and recoding data</a></li>
+<li class="chapter" data-level="7.1.4" data-path="exploring-data.html"><a href="exploring-data.html#communicating-data-science-results-effectively"><i class="fa fa-check"></i><b>7.1.4</b> Communicating data science results effectively</a></li>
+<li class="chapter" data-level="7.1.5" data-path="exploring-data.html"><a href="exploring-data.html#web-scraping-and-programming"><i class="fa fa-check"></i><b>7.1.5</b> Web scraping and programming</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="exploring-data.html"><a href="exploring-data.html#labs"><i class="fa fa-check"></i><b>7.2</b> Labs</a></li>
+<li class="chapter" data-level="7.3" data-path="exploring-data.html"><a href="exploring-data.html#homework-assignments"><i class="fa fa-check"></i><b>7.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ethics.html"><a href="ethics.html"><i class="fa fa-check"></i><b>8</b> Data science ethics</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ethics.html"><a href="ethics.html#slides-videos-and-application-exercises-2"><i class="fa fa-check"></i><b>8.1</b> Slides, videos, and application exercises</a></li>
+<li class="chapter" data-level="8.2" data-path="ethics.html"><a href="ethics.html#labs-1"><i class="fa fa-check"></i><b>8.2</b> Labs</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html"><i class="fa fa-check"></i><b>9</b> Making rigorous conclusions</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#slides-videos-and-application-exercises-3"><i class="fa fa-check"></i><b>9.1</b> Slides, videos, and application exercises</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#modelling-data"><i class="fa fa-check"></i><b>9.1.1</b> Modelling data</a></li>
+<li class="chapter" data-level="9.1.2" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#classification-and-model-building"><i class="fa fa-check"></i><b>9.1.2</b> Classification and model building</a></li>
+<li class="chapter" data-level="9.1.3" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#model-validation"><i class="fa fa-check"></i><b>9.1.3</b> Model validation</a></li>
+<li class="chapter" data-level="9.1.4" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#uncertainty-quantification"><i class="fa fa-check"></i><b>9.1.4</b> Uncertainty quantification</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#labs-2"><i class="fa fa-check"></i><b>9.2</b> Labs</a></li>
+<li class="chapter" data-level="9.3" data-path="making-rigorous-conclusions.html"><a href="making-rigorous-conclusions.html#homework-assignments-1"><i class="fa fa-check"></i><b>9.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="looking-forward.html"><a href="looking-forward.html"><i class="fa fa-check"></i><b>10</b> Looking further</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="looking-forward.html"><a href="looking-forward.html#slides-videos-and-application-exercises-4"><i class="fa fa-check"></i><b>10.1</b> Slides, videos, and application exercises</a></li>
+<li class="chapter" data-level="10.2" data-path="looking-forward.html"><a href="looking-forward.html#labs-3"><i class="fa fa-check"></i><b>10.2</b> Labs</a></li>
+<li class="chapter" data-level="10.3" data-path="looking-forward.html"><a href="looking-forward.html#homework-assignments-2"><i class="fa fa-check"></i><b>10.3</b> Homework assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="interactive-tutorials.html"><a href="interactive-tutorials.html"><i class="fa fa-check"></i><b>11</b> Interactive tutorials</a></li>
+<li class="chapter" data-level="12" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>12</b> Project</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="project.html"><a href="project.html#tldr"><i class="fa fa-check"></i><b>12.1</b> TL;DR</a></li>
+<li class="chapter" data-level="12.2" data-path="project.html"><a href="project.html#may-be-too-long-but-please-do-read"><i class="fa fa-check"></i><b>12.2</b> May be too long, but please do read</a></li>
+<li class="chapter" data-level="12.3" data-path="project.html"><a href="project.html#data"><i class="fa fa-check"></i><b>12.3</b> Data</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="project.html"><a href="project.html#deliverables"><i class="fa fa-check"></i><b>12.3.1</b> Deliverables</a></li>
+<li class="chapter" data-level="12.3.2" data-path="project.html"><a href="project.html#tips"><i class="fa fa-check"></i><b>12.3.2</b> Tips</a></li>
+<li class="chapter" data-level="12.3.3" data-path="project.html"><a href="project.html#marking"><i class="fa fa-check"></i><b>12.3.3</b> Marking</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="exams.html"><a href="exams.html"><i class="fa fa-check"></i><b>13</b> Exams</a></li>
+<li class="part"><span><b>III Infrastructure</b></span></li>
+<li class="chapter" data-level="14" data-path="access-r.html"><a href="access-r.html"><i class="fa fa-check"></i><b>14</b> Accessing R</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="access-r.html"><a href="access-r.html#setting-up-your-course-in-rstudio-cloud"><i class="fa fa-check"></i><b>14.1</b> Setting up your course in RStudio Cloud</a></li>
+<li class="chapter" data-level="14.2" data-path="access-r.html"><a href="access-r.html#projects"><i class="fa fa-check"></i><b>14.2</b> Projects</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="access-r.html"><a href="access-r.html#access"><i class="fa fa-check"></i><b>14.2.1</b> Access</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="access-r.html"><a href="access-r.html#base-project-template"><i class="fa fa-check"></i><b>14.3</b> Base project template</a></li>
+<li class="chapter" data-level="14.4" data-path="access-r.html"><a href="access-r.html#git-integration"><i class="fa fa-check"></i><b>14.4</b> Git integration</a></li>
+<li class="chapter" data-level="14.5" data-path="access-r.html"><a href="access-r.html#troubleshooting"><i class="fa fa-check"></i><b>14.5</b> Troubleshooting</a></li>
+<li class="chapter" data-level="14.6" data-path="access-r.html"><a href="access-r.html#limits"><i class="fa fa-check"></i><b>14.6</b> Limits</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="access-r.html"><a href="access-r.html#memory-cpu"><i class="fa fa-check"></i><b>14.6.1</b> Memory &amp; CPU</a></li>
+<li class="chapter" data-level="14.6.2" data-path="access-r.html"><a href="access-r.html#other-limits"><i class="fa fa-check"></i><b>14.6.2</b> Other limits</a></li>
+</ul></li>
+<li class="chapter" data-level="14.7" data-path="access-r.html"><a href="access-r.html#learn-more-2"><i class="fa fa-check"></i><b>14.7</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i><b>15</b> Version control</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="version-control.html"><a href="version-control.html#git"><i class="fa fa-check"></i><b>15.1</b> Git</a></li>
+<li class="chapter" data-level="15.2" data-path="version-control.html"><a href="version-control.html#github"><i class="fa fa-check"></i><b>15.2</b> GitHub</a></li>
+<li class="chapter" data-level="15.3" data-path="version-control.html"><a href="version-control.html#ghclass"><i class="fa fa-check"></i><b>15.3</b> ghclass</a></li>
+<li class="chapter" data-level="15.4" data-path="version-control.html"><a href="version-control.html#learn-more-3"><i class="fa fa-check"></i><b>15.4</b> Learn more</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>16</b> Discussion</a></li>
+<li class="chapter" data-level="17" data-path="sharing.html"><a href="sharing.html"><i class="fa fa-check"></i><b>17</b> Sharing</a></li>
+<li class="chapter" data-level="18" data-path="alternative-setups.html"><a href="alternative-setups.html"><i class="fa fa-check"></i><b>18</b> Alternative setups</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="alternative-setups.html"><a href="alternative-setups.html#centralized-rstudio-server"><i class="fa fa-check"></i><b>18.1</b> Centralized RStudio server</a></li>
+<li class="chapter" data-level="18.2" data-path="alternative-setups.html"><a href="alternative-setups.html#dockerized-rstudio-server"><i class="fa fa-check"></i><b>18.2</b> Dockerized RStudio server</a></li>
+<li class="chapter" data-level="18.3" data-path="alternative-setups.html"><a href="alternative-setups.html#learn-more-4"><i class="fa fa-check"></i><b>18.3</b> Learn more</a></li>
+</ul></li>
+<li class="part"><span><b>IV Pedagogy</b></span></li>
+<li class="chapter" data-level="19" data-path="pedagogy.html"><a href="pedagogy.html"><i class="fa fa-check"></i><b>19</b> Pedagogy</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="pedagogy.html"><a href="pedagogy.html#course-design"><i class="fa fa-check"></i><b>19.1</b> Course design</a></li>
+<li class="chapter" data-level="19.2" data-path="pedagogy.html"><a href="pedagogy.html#teaching-the-tidyverse"><i class="fa fa-check"></i><b>19.2</b> Teaching the tidyverse</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="schedule.html"><a href="schedule.html"><i class="fa fa-check"></i><b>20</b> Schedule</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="schedule.html"><a href="schedule.html#week-schedule"><i class="fa fa-check"></i><b>20.1</b> 11-week schedule</a></li>
+<li class="chapter" data-level="20.2" data-path="schedule.html"><a href="schedule.html#week-schedule-1"><i class="fa fa-check"></i><b>20.2</b> 15-week schedule</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science Basics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hello-world" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Hello world</h1>
+<p>I recommend starting the class off right, devoting more of the class time to introducing the course content instead of the course policies.
+And get students doing something with data as quickly as possible!
+A personal goal of mine is to get students to produce their first data visualization within the first 10 minutes of class.
+The application exercise in this lecture is one way of achieving this goal.
+Slides for Day One of class are provided below.</p>
+<p>Note that getting students computing on Day One in class requires that they come to class equipped with a laptop or that you’re holding your course online or in a computer lab.
+If teaching online, this is resolved automatically, of course.
+They do not need to do any preparation ahead of time, just need internet access.
+As outlined in the slides, give them a link to your RStudio Cloud workspace and get them started working on the application exercise you put together for them.
+There are two options for a day one application exercise.
+Note that one of them uses COVID-19 data and depending on where, when, and to whom you’re teaching, working with these data might not be the most pleasant experience for all students.
+Please make sure to consider this before using this activity.</p>
+<div class="rstudio-cloud">
+<p>The RStudio Cloud workspace for Data Science Course in a Box project is <a href="https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK">here</a>.
+You can join the workspace and play around with the sample application exercises.</p>
+</div>
+<div id="slides-videos-and-application-exercises" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Slides, videos, and application exercises</h2>
+<div class="slide-deck">
+<p><strong>Unit 1 - Deck 1: Welcome</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d01-welcome">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/OJ1xR0ObhIw">Video</a></p>
+</div>
+</div>
+<div class="application-exercise">
+<p><strong>First dataviz</strong></p>
+<blockquote>
+<p><strong>Option 1 - UN Votes</strong></p>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/r-uTBEclM1E">Video</a></p>
+</div>
+</blockquote>
+<blockquote>
+<p><strong>Option 2 - COVID-19</strong></p>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd">Source</a></p>
+</div>
+</blockquote>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 1 - Deck 2: Meet the toolkit - Programming</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d02-toolkit-r/u1-d02-toolkit-r.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d02-toolkit-r">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/mTAZLFcpnLI">Video</a></p>
+</div>
+<div class="reading">
+<ul>
+<li>R4DS :: <a href="https://r4ds.had.co.nz/explore-intro.html">Chp 2 - Introduction</a></li>
+<li>IMS :: <a href="https://openintro-ims.netlify.app/getting-started-with-data.html#basic-stents-strokes">Sec 1.1 &amp; 1.2 - Case study &amp; Data basics</a></li>
+</ul>
+</div>
+</div>
+<div class="application-exercise">
+<p><strong>Bechdel + R Markdown</strong></p>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel.Rmd">Source</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 1 - Deck 3: Meet the toolkit - Version control and collaboration</strong></p>
+<div class="slides">
+<p><a href="https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git">Source</a></p>
+</div>
+<div class="video">
+<p><a href="https://youtu.be/124DQasLyNQ">Video</a></p>
+</div>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="community.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exploring-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
