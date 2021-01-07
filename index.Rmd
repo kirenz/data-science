@@ -1,6 +1,6 @@
 ---
 knit: "bookdown::render_book"
-title: "Data Science Basics"
+title: "Introduction to Data Science"
 author: "Jan Kirenz"
 description: "The course Data Science Basics contains materials to learn data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results using the programming language R."
 date: "`r Sys.Date()`"
@@ -13,11 +13,9 @@ link-citations: yes
 
 # Welcome {.unnumbered}
 
-The core content of this introductory data science course focuses on data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results.
+This course contains materials to learn data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results using the programming language R.
 
-A heavy emphasis is placed on a consistent syntax (with tools from the [tidyverse](https://www.tidyverse.org/)), reproducibility (with [R Markdown](https://rmarkdown.rstudio.com/)), and version control and collaboration (with Git and GitHub).
-
-The goal of the course is to bring students from zero to being able to work in a team on a fully reproducible data science project analysing a dataset of their choice and answering questions they care about.
+The goal of this course is to enable students to work on a fully reproducible data science project analysing a dataset of their choice and answering questions they care about.
 
 ## License {.unnumbered}
 

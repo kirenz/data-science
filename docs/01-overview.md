@@ -5,6 +5,10 @@
 Hello!
 And welcome!
 
+The core content of this introductory data science course focuses on data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results.
+
+A heavy emphasis is placed on a consistent syntax (with tools from the [tidyverse](https://www.tidyverse.org/)), reproducibility (with [R Markdown](https://rmarkdown.rstudio.com/)), and version control and collaboration (with Git and GitHub).
+
 ::: {.rstudio-cloud}
 The RStudio Cloud workspace for your course is provided in your [Moodle-Course](https://e-learning.hdm-stuttgart.de/moodle/login/index.php).
 You have to join the workspace to use the sample application exercises.
