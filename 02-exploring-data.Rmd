@@ -113,7 +113,7 @@ JSS :: [Tidy data](https://www.jstatsoft.org/article/view/v059i10)
 **Unit 2 - Deck 6: Grammar of data wrangling**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d06-grammar-wrangle/u2-d06-grammar-wrangle.pdf)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d06-grammar-wrangle/u2-d06-grammar-wrangle.pdf)
 :::
 
 ::: {.source}
@@ -146,10 +146,6 @@ R4DS :: [Chp 5 - Data transformation](https://r4ds.had.co.nz/transform.html)
 
 ::: {.slides}
 [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-2.pdf)
-:::
-
-::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-3.pdf)
 :::
 
 ::: {.source}

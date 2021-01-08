@@ -3,7 +3,7 @@ knit: "bookdown::render_book"
 title: "Introduction to Data Science"
 author: "Jan Kirenz"
 description: "The course Data Science Basics contains materials to learn data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results using the programming language R."
-date: "2021-01-07"
+date: "2021-01-08"
 github-repo: kirenz/data-science
 cover-image: dsbox.png
 site: bookdown::bookdown_site
