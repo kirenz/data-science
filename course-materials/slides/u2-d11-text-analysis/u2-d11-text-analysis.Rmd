@@ -1,5 +1,5 @@
 ---
-title: "Text analysis <br> `r emo::ji('page_with_curl')`"
+title: "Text analysis <br>"
 author: ""
 output:
   xaringan::moon_reader:

@@ -60,7 +60,7 @@ glimpse(email)
 ```
 ## Rows: 3,921
 ## Columns: 21
-## $ spam         &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+## $ spam         &lt;fct&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
 ## $ to_multiple  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0,…
 ## $ from         &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
 ## $ cc           &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1,…
@@ -100,10 +100,10 @@ Would you expect longer or shorter emails to be spam?
 
 ```
 ## # A tibble: 2 x 2
-##    spam mean_num_char
-##   &lt;dbl&gt;         &lt;dbl&gt;
-## 1     0         11.3 
-## 2     1          5.44
+##   spam  mean_num_char
+##   &lt;fct&gt;         &lt;dbl&gt;
+## 1 0             11.3 
+## 2 1              5.44
 ```
 ]
 

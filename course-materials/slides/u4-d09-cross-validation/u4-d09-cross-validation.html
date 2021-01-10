@@ -579,11 +579,30 @@ rsq(office_test_pred, truth = imdb_rating, estimate = .pred)
 
 &lt;br&gt;
 
-
-|metric    | train|  test|comparison                    |
-|:---------|-----:|-----:|:-----------------------------|
-|RMSE      | 0.350| 0.482|RMSE lower for training       |
-|R-squared | 0.533| 0.496|R-squared higher for training |
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; metric &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; train &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; test &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; comparison &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; RMSE &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.350 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.482 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; RMSE lower for training &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; R-squared &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.533 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.496 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R-squared higher for training &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 ---
 
@@ -738,14 +757,42 @@ collect_metrics(office_fit_rs, summarize = FALSE) %&gt;%
 ```
 ]
 .panel[.panel-name[Tidy]
-
-|Fold  |  RMSE| R-squared|
-|:-----|-----:|---------:|
-|Fold1 | 0.399|     0.449|
-|Fold2 | 0.306|     0.749|
-|Fold3 | 0.438|     0.390|
-|Fold4 | 0.419|     0.280|
-|Fold5 | 0.327|     0.344|
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Fold &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; RMSE &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; R-squared &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Fold1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.399 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.449 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Fold2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.306 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.749 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Fold3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.438 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.390 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Fold4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.419 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.280 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Fold5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.327 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.344 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 ]
 ]
 

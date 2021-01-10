@@ -26,6 +26,7 @@ library(tidymodels)
 library(openintro)
 library(lubridate)
 library(knitr)
+
 set.seed(1234)
 options(
   warnPartialMatchArgs = FALSE,
@@ -34,8 +35,7 @@ options(
   width = 100
 )
 
-email <- email %>% 
-  mutate(spam = as.factor(spam))
+
 
 
 ```
@@ -70,32 +70,21 @@ class: middle
 # Enables analysis to be reproducible when random numbers are used 
 set.seed(1116)
 
+email_df <- email %>% 
+  mutate(spam = as.factor(spam))
+
 # Put 80% of the data into the training set 
-email_split <- initial_split(email, prop = 0.80)
+email_split <- initial_split(email_df, prop = 0.80)
 
 # Create data frames for the two sets:
 train_data <- training(email_split)
 test_data  <- testing(email_split)
 ```
 
----
-
-## A simple approach: `mutate()`
-
-```{r}
-train_data %>%
-  mutate(
-    date = date(time),
-    dow  = wday(time),
-    month = month(time)
-    ) %>%
-  select(time, date, dow, month) %>%
-  sample_n(size = 5) # shuffle to show a variety
-```
 
 ---
 
-## Modeling workflow, revisited
+## Modeling workflow
 
 - Create a **recipe** for feature engineering steps to be applied to the training data
 
