@@ -14,4 +14,4 @@ This repository contains the core content of a data science course which focuses
 
 ---
 
-The content of this course is mainly based on Mine Çetinkaya-Rundel's excellent "Data Science in a Box"
+*The content of this course is mainly based on Mine Çetinkaya-Rundel's excellent "Data Science in a Box"*
