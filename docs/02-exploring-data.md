@@ -141,11 +141,11 @@ R4DS :: [Chp 5 - Data transformation](https://r4ds.had.co.nz/transform.html)
 **Unit 2 - Deck 8: Working with multiple data frames**
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-1.pdf)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-1.pdf)
 :::
 
 ::: {.slides}
-[Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-2.pdf)
+[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u2-d08-multi-df/u2-d08-multi-df-2.pdf)
 :::
 
 ::: {.source}
