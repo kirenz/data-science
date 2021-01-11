@@ -15,7 +15,7 @@ You have to join the workspace to use the sample application exercises.
 **Unit 1 - Deck 1: Welcome**
 
 ::: {.slides}
-[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d01-welcome/u1-d01-welcome.pdf)
+[Slides](https://kirenz.github.io/data-science/course-materials/slides/u1-d01-welcome/u1-d01-welcome.html#1)
 :::
 :::
 
@@ -25,13 +25,13 @@ You have to join the workspace to use the sample application exercises.
 > **Option 1 - UN Votes**
 >
 > ::: {.source}
-> [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd)
+> [Source](https://github.com/kirenz/data-science/tree/master/course-materials/application-exercises/ae-01a-un-votes/unvotes.Rmd)
 > :::
 
 > **Option 2 - COVID-19**
 >
 > ::: {.source}
-> [Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
+> [Source](https://github.com/kirenz/data-science/tree/master/course-materials/application-exercises/ae-01b-covid/covid.Rmd)
 > :::
 :::
 
@@ -39,11 +39,11 @@ You have to join the workspace to use the sample application exercises.
 **Unit 1 - Deck 2: Meet the toolkit - Programming**
 
 ::: {.slides}
-[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d02-toolkit-r/u1-d02-toolkit-r.pdf)
+[Slides](https://kirenz.github.io/data-science/course-materials/slides/u1-d02-toolkit-r/u1-d02-toolkit-r.html#1)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d02-toolkit-r)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u1-d02-toolkit-r)
 :::
 
 ::: {.reading}
@@ -56,7 +56,7 @@ You have to join the workspace to use the sample application exercises.
 **Bechdel + R Markdown**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/blob/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel)
 :::
 :::
 
@@ -64,10 +64,10 @@ You have to join the workspace to use the sample application exercises.
 **Unit 1 - Deck 3: Meet the toolkit - Version control and collaboration**
 
 ::: {.slides}
-[Slides](https://github.com/kirenz/data-science/blob/master/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.pdf)
+[Slides](https://kirenz.github.io/data-science/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1)
 :::
 
 ::: {.source}
-[Source](https://github.com/rstudio-education/datascience-box/tree/master/course-materials/slides/u1-d03-toolkit-git)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/slides/u1-d03-toolkit-git)
 :::
 :::
