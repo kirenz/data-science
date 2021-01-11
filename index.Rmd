@@ -6,6 +6,7 @@ description: "The course Data Science Basics contains materials to learn data ac
 date: "`r Sys.Date()`"
 github-repo: kirenz/data-science
 cover-image: dsbox.png
+url: 'https\://data-science-basics.netlify.app//'
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes

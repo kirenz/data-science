@@ -3,7 +3,6 @@
 # Overview {#overview}
 
 Hello!
-And welcome!
 
 The core content of this introductory data science course focuses on data acquisition and wrangling, exploratory data analysis, data visualization, inference, modelling, and effective communication of results.
 
