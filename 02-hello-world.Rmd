@@ -56,7 +56,7 @@ You have to join the workspace to use the sample application exercises.
 **Bechdel + R Markdown**
 
 ::: {.source}
-[Source](https://github.com/kirenz/data-science/tree/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown/bechdel)
+[Source](https://github.com/kirenz/data-science/tree/master/course-materials/application-exercises/ae-02-bechdel-rmarkdown)
 :::
 :::
 
