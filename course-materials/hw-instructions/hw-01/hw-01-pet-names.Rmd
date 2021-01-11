@@ -1,6 +1,6 @@
 ---
 title: "HW 01 - Pet names"
-subtitle: "Mett the toolkit"
+subtitle: "Meet the toolkit"
 output: 
   tufte::tufte_html:
     css: ../hw.css
@@ -22,7 +22,7 @@ library(ggrepel)
 ```
 
 ```{r photo, fig.margin = TRUE, echo = FALSE, fig.width = 3, fig.cap = "Photo by Jovana Askrabic on Unsplash", eval = TRUE}
-knitr::include_graphics("img/jovana-askrabic-XYIQXLH_v0o-unsplash.jpg")
+#knitr::include_graphics("img/jovana-askrabic-XYIQXLH_v0o-unsplash.jpg")
 ```
 
 The goal of this assignment is to introduce you to R, RStudio, Git, and GitHub, which you'll be using throughout the course both to learn the data science concepts discussed in the course and to analyze real data and come to informed conclusions.
@@ -31,12 +31,16 @@ The goal of this assignment is to introduce you to R, RStudio, Git, and GitHub, 
 
 ## Prerequisites {data-link="Prerequisites"}
 
-This assignment assumes that you have reviewed the lectures titled "Meet the toolkit: Programming" and "Meet the toolkit: version control and collaboration".
+This assignment assumes that you have reviewed the lectures titled
+
+-   "Meet the toolkit: Programming" and
+-   "Meet the toolkit: version control and collaboration".
+
 If you haven't yet done so, please pause and complete the following before continuing.
 
 ## Terminology
 
-We've already thrown around a few new terms, so let's define them before we proceed.
+We've already discussed a few new terms, so let's define them before we proceed.
 
 -   **R:** Name of the programming language we will be using throughout the course.
 
@@ -52,7 +56,7 @@ We've already thrown around a few new terms, so let's define them before we proc
 
     -   In this course, each assignment you work on will be contained in a Git repo.
     -   For individual assignments, only you will have access to the repo. For team assignments, all team members will have access to a single repo where they work collaboratively.
-    -   All repos associated with this course are housed in the course GitHub organization. The organization is set up such that students can only see repos they have access to, but the course staff can see all of them.
+    -   All repos associated with this course are housed in the course GitHub organization. The organization is set up such that students can only see repos they have access to.
 
 ## Starting slow
 
