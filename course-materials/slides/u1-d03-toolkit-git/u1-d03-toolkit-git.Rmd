@@ -146,11 +146,9 @@ class: inverse
 
 - [Create a GitHub account](https://github.com)
 
-- [Download GitHub Desktop](https://desktop.github.com)
-
 - Verify your GitHub email
 
 - Adjust your GitHub settings for a more pleasant GitHub experience
-  - Settings > Update name and photo
-
+  - Settings > Emails > Uncheck "Keep my email address private" (note: your email will not be made visible. This step is important to link GitHub to RStudio-Cloud)
+  - Settings > Emails > Update name and photo
 
