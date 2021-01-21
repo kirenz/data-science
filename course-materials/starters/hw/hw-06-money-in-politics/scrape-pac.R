@@ -9,16 +9,15 @@ library(here)
 scrape_pac <- function(url) {
   
   # read the page
-  page <- ___(___)
+  page <- read_html("https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2020")
   
   # exract the table
-  pac <-  page %>%
-    # select node .DataTable (identified using the SelectorGadget)
-    html_node(".DataTable") %>%
-    # parse table at node td into a data frame
-    #   table has a head and empty cells should be filled with NAs
-    html_table("td", header = ___, fill = ___) %>%
-    # convert to a tibble
+  pac <-  
+    page %>%
+    html_table(header = TRUE, fill=TRUE) 
+  
+  # convert to a tibble
+  pac <- pac[[1]] %>% 
     as_tibble()
   
   # rename variables

@@ -11,7 +11,16 @@ output: github_document
 library(tidyverse)
 library(rvest)
 library(scales)
+library(robotstxt)
+
 ```
+
+
+```{r}
+library(robotstxt)
+paths_allowed("https://www.opensecrets.org")
+```
+
 
 ## Exercises
 
