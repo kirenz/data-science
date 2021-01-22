@@ -24,8 +24,8 @@ jobs:
     
       - name: Install packages
         run: |
-         #install.packages(c("rmarkdown", "tidyverse", "renv", "remotes", "magick"))
-         install.packages(c("rmarkdown", "remotes"))
+         install.packages(c("rmarkdown", "tidyverse", "renv", "remotes", "magick"))
+         #install.packages(c("rmarkdown", "remotes"))
          remotes::install_github(c("rundel/checklist", "rstudio-education/dsbox", "hadley/emo", "gadenbuie/countdown", "r-lib/conflicted", "gadenbuie/xaringanExtra"))
         shell: Rscript {0}
     
