@@ -6,46 +6,44 @@ library(here)
 
 # function: scrape_pac ---------------------------------------------------------
 
-# scrape_pac <- function(url) {
-#
-  # read the page
-  page <- read_html("https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/2020")
 
+scrape_pac <- function(url) {
+  
+  # read the page
+  page <- read_html(url)
+  
   # exract the table
   pac <-
     page %>%
-    html_table(header = TRUE, fill=TRUE)
-
-  # convert to a tibble
+    html_table(header = ___, fill=___)
+  
+  # convert list to a tibble
   pac <- pac[[1]] %>%
     as_tibble()
-
-glimpse(pac)  
   
   # rename variables
-  pac <- pac %>%
-    # rename columns
+  pac <- 
+    pac %>%
     rename(
-      name = ___ ,
-      country_parent = ___,
+      name = `PAC Name (Affiliate)`,
+      country_parent = `Country of Origin/Parent Company`,
       total = ___,
       dems = ___,
       repubs = ___
     )
-
-  # fix name
-  pac <- pac %>%
-    # remove extraneous whitespaces from the name column
-    mutate(name = ___)
-
-  # add year
-  pac <- pac %>%
-    # extract last 4 characters of the URL and save as year
-    mutate(year = ___)
-
+  
+  # fix name and add year
+  pac <- 
+    pac %>%
+    mutate(
+      # remove extraneous whitespaces from the name column
+      name = str_squish(name), 
+      # add year: extract last 4 characters of the URL and save as year
+      year = str_sub(url, start = -___, end = -___)
+    )
+  
   # return data frame
   pac
-
 }
 
 # test function ----------------------------------------------------------------
@@ -65,14 +63,14 @@ pac_1998 <- scrape_pac(___)
 root <- "https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs?cycle="
 
 # second part of url (election years as a sequence)
-year <- seq(from = ___, to = ___, by = ___)
+year <- seq(from = ___, to = ___, by = 2)
 
 # construct urls by pasting first and second parts together
 urls <- paste0(___, ___)
 
 # map the scrape_pac function over list of urls --------------------------------
 
-pac_all <- ___(___, ___)
+pac_all <- map_dfr(___, ___)
 
 # write data -------------------------------------------------------------------
 
