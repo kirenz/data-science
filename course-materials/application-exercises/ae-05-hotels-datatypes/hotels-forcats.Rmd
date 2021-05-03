@@ -1,6 +1,5 @@
 ---
 title: "Hotel bookings - factors"
-author: "Mine Çetinkaya-Rundel"
 output: github_document
 ---
 
