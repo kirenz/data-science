@@ -1,6 +1,5 @@
 ---
 title: "UN Votes"
-author: "Mine Çetinkaya-Rundel"
 output: html_document
 ---
 
