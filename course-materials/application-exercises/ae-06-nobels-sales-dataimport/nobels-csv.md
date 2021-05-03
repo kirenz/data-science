@@ -1,6 +1,5 @@
 Nobel winners
 ================
-Mine Çetinkaya-Rundel
 
 ``` r
 library(tidyverse)
