@@ -1,6 +1,5 @@
 ---
 title: "Nobel winners"
-author: "Mine Çetinkaya-Rundel"
 output: github_document
 ---
 
