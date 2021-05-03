@@ -1,6 +1,5 @@
 Hotel bookings - data wrangling
 ================
-Mine Çetinkaya-Rundel
 
 ``` r
 library(tidyverse)
@@ -16,7 +15,7 @@ hotels <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesda
 
 ### Exercise 1.
 
-Warm up! Take a look at an overview of the data with the `skim()`
+Warm up\! Take a look at an overview of the data with the `skim()`
 function.
 
 **Note:** I already gave you the answer to this exercise. You just need
@@ -30,7 +29,7 @@ skim(hotels)
 ```
 
 |                                                  |        |
-|:-------------------------------------------------|:-------|
+| :----------------------------------------------- | :----- |
 | Name                                             | hotels |
 | Number of rows                                   | 119390 |
 | Number of columns                                | 32     |
@@ -47,7 +46,7 @@ Data summary
 **Variable type: character**
 
 | skim\_variable        | n\_missing | complete\_rate | min | max | empty | n\_unique | whitespace |
-|:----------------------|-----------:|---------------:|----:|----:|------:|----------:|-----------:|
+| :-------------------- | ---------: | -------------: | --: | --: | ----: | --------: | ---------: |
 | hotel                 |          0 |              1 |  10 |  12 |     0 |         2 |          0 |
 | arrival\_date\_month  |          0 |              1 |   3 |   9 |     0 |        12 |          0 |
 | meal                  |          0 |              1 |   2 |   9 |     0 |         5 |          0 |
@@ -65,13 +64,13 @@ Data summary
 **Variable type: Date**
 
 | skim\_variable            | n\_missing | complete\_rate | min        | max        | median     | n\_unique |
-|:--------------------------|-----------:|---------------:|:-----------|:-----------|:-----------|----------:|
+| :------------------------ | ---------: | -------------: | :--------- | :--------- | :--------- | --------: |
 | reservation\_status\_date |          0 |              1 | 2014-10-17 | 2017-09-14 | 2016-08-07 |       926 |
 
 **Variable type: numeric**
 
 | skim\_variable                    | n\_missing | complete\_rate |    mean |     sd |      p0 |     p25 |     p50 |  p75 | p100 | hist  |
-|:----------------------------------|-----------:|---------------:|--------:|-------:|--------:|--------:|--------:|-----:|-----:|:------|
+| :-------------------------------- | ---------: | -------------: | ------: | -----: | ------: | ------: | ------: | ---: | ---: | :---- |
 | is\_canceled                      |          0 |              1 |    0.37 |   0.48 |    0.00 |    0.00 |    0.00 |    1 |    1 | ▇▁▁▁▅ |
 | lead\_time                        |          0 |              1 |  104.01 | 106.86 |    0.00 |   18.00 |   69.00 |  160 |  737 | ▇▂▁▁▁ |
 | arrival\_date\_year               |          0 |              1 | 2016.16 |   0.71 | 2015.00 | 2016.00 | 2016.00 | 2017 | 2017 | ▃▁▇▁▆ |
@@ -87,7 +86,7 @@ Data summary
 | previous\_bookings\_not\_canceled |          0 |              1 |    0.14 |   1.50 |    0.00 |    0.00 |    0.00 |    0 |   72 | ▇▁▁▁▁ |
 | booking\_changes                  |          0 |              1 |    0.22 |   0.65 |    0.00 |    0.00 |    0.00 |    0 |   21 | ▇▁▁▁▁ |
 | days\_in\_waiting\_list           |          0 |              1 |    2.32 |  17.59 |    0.00 |    0.00 |    0.00 |    0 |  391 | ▇▁▁▁▁ |
-| adr                               |          0 |              1 |  101.83 |  50.54 |   -6.38 |   69.29 |   94.58 |  126 | 5400 | ▇▁▁▁▁ |
+| adr                               |          0 |              1 |  101.83 |  50.54 |  \-6.38 |   69.29 |   94.58 |  126 | 5400 | ▇▁▁▁▁ |
 | required\_car\_parking\_spaces    |          0 |              1 |    0.06 |   0.25 |    0.00 |    0.00 |    0.00 |    0 |    8 | ▇▁▁▁▁ |
 | total\_of\_special\_requests      |          0 |              1 |    0.57 |   0.79 |    0.00 |    0.00 |    0.00 |    1 |    5 | ▇▁▁▁▁ |
 
@@ -116,9 +115,9 @@ How many bookings involve at least 1 child **or** baby?
 
 In the following chunk, replace
 
--   `[AT LEAST]` with the logical operator for “at least” (in two
+  - `[AT LEAST]` with the logical operator for “at least” (in two
     places)
--   `[OR]` with the logical operator for “or”
+  - `[OR]` with the logical operator for “or”
 
 **Note:** You will need to set `eval=TRUE` when you have an answer you
 want to try out.
@@ -216,7 +215,7 @@ of variables in the data), but we will be using a limited set of the
 variables for our analysis.
 
 | variable                          | class     | description                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|:----------------------------------|:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------------------- | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | hotel                             | character | Hotel (H1 = Resort Hotel or H2 = City Hotel)                                                                                                                                                                                                                                                                                                                                                                                        |
 | is\_canceled                      | double    | Value indicating if the booking was canceled (1) or not (0)                                                                                                                                                                                                                                                                                                                                                                         |
 | lead\_time                        | double    | Number of days that elapsed between the entering date of the booking into the PMS and the arrival date                                                                                                                                                                                                                                                                                                                              |
