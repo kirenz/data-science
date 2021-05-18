@@ -60,7 +60,7 @@ pac_1998 <- scrape_pac(___)
 # list of urls -----------------------------------------------------------------
 
 # first part of url
-root <- "https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs?cycle="
+root <- "https://www.opensecrets.org/political-action-committees-pacs/foreign-connected-pacs/"
 
 # second part of url (election years as a sequence)
 year <- seq(from = ___, to = ___, by = 2)
