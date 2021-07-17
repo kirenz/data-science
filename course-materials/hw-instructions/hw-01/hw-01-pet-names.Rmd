@@ -70,7 +70,7 @@ Before you can get started with the analysis, you need to make sure you:
 
 -   are a member of the course GitHub organization
 
--   are a member of the course RStudio Cloud space
+-   have an Account in RStudio Cloud
 
 If you failed to confirm any of these, it means you have not yet completed the prerequisites for this assignment.
 Please go back to [Prerequisites] and complete them before continuing the assignment.
@@ -82,12 +82,12 @@ Please go back to [Prerequisites] and complete them before continuing the assign
 ```
 
 For each assignment in this course you will start with a GitHub repo that I created for you and that contains the starter documents you will build upon when working on your assignment.
-The first step is always to bring these files into RStudio so that you can edit them, run them, view your results, and interpret them.
+The first step is always to bring these files into your local machine so that you can edit them, run them, view your results, and interpret them.
 This action is called **cloning**.
 
 Then you will work in RStudio on the data analysis, making **commits** along the way (snapshots of your changes) and finally **push** all your work back to GitHub.
 
-The next few steps will walk you through the process of getting information of the repo to be cloned, cloning your repo in a new RStudio Cloud project, and getting started with the analysis.
+The next few steps will walk you through the process of getting information of the repo to be cloned, cloning your repo in a RStudio Cloud project, and getting started with the analysis.
 
 ### Step 1. Get URL of repo to be cloned
 
@@ -100,17 +100,11 @@ Click on the clipboard icon 📋 to copy the repo URL.
 
 ### Step 2. Go to RStudio Cloud
 
-Go to [rstudio.cloud](https://rstudio.cloud/ "RStudio Cloud") and then **navigate to the course workspace** via the left sidebar.
-It's very important that you do this for two reasons:
-
--   It's only when you're in the course workspace that you'll be able to benefit from R packages I've pre-installed for you so that your project can be configured correctly.
--   It's only when you're in the course workspace that your usage of RStudio Cloud won't count towards the free usage limits.
+Go to [rstudio.cloud](https://rstudio.cloud/ "RStudio Cloud") and then **navigate to your workspace** via the left sidebar.
 
 ```{r course-workspace, fig.margin = TRUE, echo = FALSE, eval = TRUE}
 knitr::include_graphics("img/course-workspace.png")
 ```
-
-Before you proceed, confirm that you are in the course workspace by checking out what's on your top bar in RStudio Cloud.
 
 ### Step 3. Clone the repo
 
@@ -193,7 +187,7 @@ But for this one assignment you'll have to manually enter each time you push in 
 # Packages
 
 R is an open-source language, and developers contribute functionality to R via packages.
-In this assignment we will use the following packages:
+In this assignment we will use the following packages (you need to install them first):
 
 -   **tidyverse**: a collection of packages for doing data analysis in a "tidy" way
 -   **openintro**: a package that contains the datasets from OpenIntro resources
